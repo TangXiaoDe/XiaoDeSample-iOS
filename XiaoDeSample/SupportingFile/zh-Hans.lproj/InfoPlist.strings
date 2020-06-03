@@ -5,3 +5,8 @@
   Created by 小唐 on 2020/6/3.
   Copyright © 2020 XiaoDeStudio. All rights reserved.
 */
+
+
+/// 项目名
+"CFBundleName" = "XiaoDeSample";
+"CFBundleDisplayName" = "XiaoDeSample";

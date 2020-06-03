@@ -76,8 +76,7 @@ extension AppDelegate {
     
     /// 根控加载
     fileprivate func setupRootVC() -> Void {
-        //let rootVC = RootManager.share.rootVC
-        let rootVC = ViewController.init()
+        let rootVC = RootManager.share.rootVC
         let window = UIWindow(frame: UIScreen.main.bounds)
         window.rootViewController = rootVC
         window.makeKeyAndVisible()
