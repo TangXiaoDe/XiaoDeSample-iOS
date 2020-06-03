@@ -82,11 +82,16 @@ extension LaunchController {
             if AppConfig.share.showTest {
                 self.enterTestPage()
             } else {
-                self.gotoNextPage()
+                //self.gotoNextPage()
+                self.enterProjectManagePage()
             }
         }
     }
-
+    fileprivate func enterProjectManagePage() -> Void {
+        let manageVC = ProjectManageHomeController.init()
+        let manageNC = BaseNavigationController.init(rootViewController: manageVC)
+        RootManager.share.switchRoot(RootType.custom(rootVC: manageNC))
+    }
     /// 进入下一个界面
     fileprivate func gotoNextPage() -> Void {
         // 第一次，则进入引导页

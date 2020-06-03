@@ -141,6 +141,11 @@
 		53F7473724879D2C007B6A0F /* TestHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F7473124879D2C007B6A0F /* TestHomeController.swift */; };
 		53F7473824879D2C007B6A0F /* TestPlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F7473324879D2C007B6A0F /* TestPlaceModel.swift */; };
 		53F7473924879D2C007B6A0F /* TestPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F7473524879D2C007B6A0F /* TestPlaceView.swift */; };
+		53F7474724879EF8007B6A0F /* ProjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F7473D24879EF8007B6A0F /* ProjectManager.swift */; };
+		53F7474824879EF8007B6A0F /* ProjectManageHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F7473F24879EF8007B6A0F /* ProjectManageHomeController.swift */; };
+		53F7474924879EF8007B6A0F /* XDBrowserMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F7474224879EF8007B6A0F /* XDBrowserMainController.swift */; };
+		53F7474A24879EF8007B6A0F /* XDBrowserPlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F7474424879EF8007B6A0F /* XDBrowserPlaceModel.swift */; };
+		53F7474B24879EF8007B6A0F /* XDBrowserPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F7474624879EF8007B6A0F /* XDBrowserPlaceView.swift */; };
 		ABDFF4B16849A5A2C32B29F5 /* Pods_XiaoDeSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A950B3071192D71E6E39A2F /* Pods_XiaoDeSample.framework */; };
 		F5AFAD11E279F9DFF63C2A40 /* Pods_XiaoDeSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C51AA1FA2E1BC0CFF9C11A /* Pods_XiaoDeSampleTests.framework */; };
 /* End PBXBuildFile section */
@@ -312,6 +317,11 @@
 		53F7473124879D2C007B6A0F /* TestHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHomeController.swift; sourceTree = "<group>"; };
 		53F7473324879D2C007B6A0F /* TestPlaceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPlaceModel.swift; sourceTree = "<group>"; };
 		53F7473524879D2C007B6A0F /* TestPlaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPlaceView.swift; sourceTree = "<group>"; };
+		53F7473D24879EF8007B6A0F /* ProjectManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectManager.swift; sourceTree = "<group>"; };
+		53F7473F24879EF8007B6A0F /* ProjectManageHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectManageHomeController.swift; sourceTree = "<group>"; };
+		53F7474224879EF8007B6A0F /* XDBrowserMainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDBrowserMainController.swift; sourceTree = "<group>"; };
+		53F7474424879EF8007B6A0F /* XDBrowserPlaceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDBrowserPlaceModel.swift; sourceTree = "<group>"; };
+		53F7474624879EF8007B6A0F /* XDBrowserPlaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDBrowserPlaceView.swift; sourceTree = "<group>"; };
 		8A950B3071192D71E6E39A2F /* Pods_XiaoDeSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XiaoDeSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEC3A2302F1A28DCEDF0B82A /* Pods-XiaoDeSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XiaoDeSample.debug.xcconfig"; path = "Target Support Files/Pods-XiaoDeSample/Pods-XiaoDeSample.debug.xcconfig"; sourceTree = "<group>"; };
 		DF6B2714B03B631313A59971 /* Pods-XiaoDeSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XiaoDeSample.release.xcconfig"; path = "Target Support Files/Pods-XiaoDeSample/Pods-XiaoDeSample.release.xcconfig"; sourceTree = "<group>"; };
@@ -422,6 +432,7 @@
 		53F745C524877411007B6A0F /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				53F7473A24879EB0007B6A0F /* MultiProject */,
 				53F745C624877411007B6A0F /* Util */,
 				53F745C724877411007B6A0F /* Config */,
 				53F745C824877411007B6A0F /* Module */,
@@ -1207,6 +1218,74 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		53F7473A24879EB0007B6A0F /* MultiProject */ = {
+			isa = PBXGroup;
+			children = (
+				53F7473B24879EF8007B6A0F /* ProjectManage */,
+				53F7474024879EF8007B6A0F /* XDBrowser */,
+			);
+			path = MultiProject;
+			sourceTree = "<group>";
+		};
+		53F7473B24879EF8007B6A0F /* ProjectManage */ = {
+			isa = PBXGroup;
+			children = (
+				53F7473C24879EF8007B6A0F /* Manager */,
+				53F7473E24879EF8007B6A0F /* Main */,
+			);
+			path = ProjectManage;
+			sourceTree = "<group>";
+		};
+		53F7473C24879EF8007B6A0F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				53F7473D24879EF8007B6A0F /* ProjectManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		53F7473E24879EF8007B6A0F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				53F7473F24879EF8007B6A0F /* ProjectManageHomeController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		53F7474024879EF8007B6A0F /* XDBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				53F7474124879EF8007B6A0F /* Controller */,
+				53F7474324879EF8007B6A0F /* Model */,
+				53F7474524879EF8007B6A0F /* View */,
+			);
+			path = XDBrowser;
+			sourceTree = "<group>";
+		};
+		53F7474124879EF8007B6A0F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				53F7474224879EF8007B6A0F /* XDBrowserMainController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		53F7474324879EF8007B6A0F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				53F7474424879EF8007B6A0F /* XDBrowserPlaceModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		53F7474524879EF8007B6A0F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				53F7474624879EF8007B6A0F /* XDBrowserPlaceView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		ADB2FBBE69CB5BC67501CEBE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1498,11 +1577,13 @@
 				53F746CB24879B22007B6A0F /* RequestInfo.swift in Sources */,
 				53F7471524879CB3007B6A0F /* LoginViewController.swift in Sources */,
 				53F7473924879D2C007B6A0F /* TestPlaceView.swift in Sources */,
+				53F7474B24879EF8007B6A0F /* XDBrowserPlaceView.swift in Sources */,
 				53F7467524879B19007B6A0F /* DataBaseManager.swift in Sources */,
 				53F746DC24879B22007B6A0F /* XDRefreshFooter.swift in Sources */,
 				53F7467824879B19007B6A0F /* AccountTokenModel.swift in Sources */,
 				53F7467224879B19007B6A0F /* AccountLoginObject.swift in Sources */,
 				53F7471B24879CB3007B6A0F /* RightMenuHomeController.swift in Sources */,
+				53F7474A24879EF8007B6A0F /* XDBrowserPlaceModel.swift in Sources */,
 				53F7463E24879A9D007B6A0F /* AppNotification.swift in Sources */,
 				53F7468124879B19007B6A0F /* UITextField+LocalExtension.swift in Sources */,
 				53F7467F24879B19007B6A0F /* String+URL.swift in Sources */,
@@ -1554,12 +1635,15 @@
 				53F746DF24879B22007B6A0F /* XDTransformType.swift in Sources */,
 				53F7472C24879CEB007B6A0F /* FourthHomeController.swift in Sources */,
 				53F7467324879B19007B6A0F /* AccountTokenObject.swift in Sources */,
+				53F7474924879EF8007B6A0F /* XDBrowserMainController.swift in Sources */,
 				53F746C324879B22007B6A0F /* AccountRequestInfo.swift in Sources */,
+				53F7474824879EF8007B6A0F /* ProjectManageHomeController.swift in Sources */,
 				53F746DD24879B22007B6A0F /* XDRefreshHeader.swift in Sources */,
 				53F7472724879CEB007B6A0F /* MainTabBarController+Extension.swift in Sources */,
 				53F7467924879B19007B6A0F /* AccountManager.swift in Sources */,
 				53F7463F24879A9D007B6A0F /* AppConstant.swift in Sources */,
 				53F7467124879B19007B6A0F /* AccountObject.swift in Sources */,
+				53F7474724879EF8007B6A0F /* ProjectManager.swift in Sources */,
 				53F7468224879B19007B6A0F /* NSAttributedString+Extension.swift in Sources */,
 				53F746DE24879B22007B6A0F /* RealmHelper.swift in Sources */,
 				53F746C224879B22007B6A0F /* SystemNetworkManager.swift in Sources */,
