@@ -50,7 +50,7 @@ extension AppManageHomeController {
         self.view.addSubview(tableView)
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.separatorStyle = .none
+        tableView.separatorStyle = .singleLine  // .none
         tableView.separatorInset = UIEdgeInsets.zero
         tableView.tableFooterView = UIView()
         tableView.estimatedRowHeight = 250
