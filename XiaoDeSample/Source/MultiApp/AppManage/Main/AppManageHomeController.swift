@@ -45,7 +45,7 @@ extension AppManageHomeController {
     fileprivate func initialUI() -> Void {
         self.view.backgroundColor = UIColor.white
         // 1. navigationbar
-        self.navigationItem.title = "ManageHome"  // "应用管理"
+        self.navigationItem.title = "AppManage"  // "应用管理"
         // 2. tableView
         self.view.addSubview(tableView)
         tableView.dataSource = self
