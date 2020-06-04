@@ -11,6 +11,8 @@ import Foundation
 import UIKit
 
 enum AppType {
+    /// 案例管理
+    case samplemanage
     /// 应用管理器
     case appmanage
     /// XD浏览器

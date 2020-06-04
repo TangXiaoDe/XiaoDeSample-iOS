@@ -1,22 +1,22 @@
 //
-//  AppManageHomeController.swift
+//  SampleManageHomeController.swift
 //  XiaoDeSample
 //
-//  Created by 小唐 on 2020/6/2.
-//  Copyright © 2020 XiaoDe. All rights reserved.
+//  Created by 小唐 on 2020/6/4.
+//  Copyright © 2020 XiaoDeStudio. All rights reserved.
 //
-//  项目管理主页
+//  Sample管理主页
 
 import UIKit
 
-class AppManageHomeController: BaseViewController
+class SampleManageHomeController: BaseViewController
 {
     
     // MARK: - Internal Property
     // MARK: - Private Property
     fileprivate let tableView: UITableView = UITableView(frame: CGRect.zero, style: .plain)
     
-    fileprivate var sourceList: [String] = ["SampleManage", "XDBrowser", "XDContacts", "XDProjectManage"]
+    fileprivate var sourceList: [String] = ["RxSwift", "SwiftUI", "LeftMenuRightMenu"]
     
     // MARK: - Initialize Function
     init() {
@@ -32,7 +32,7 @@ class AppManageHomeController: BaseViewController
 // MARK: - Internal Function
 
 // MARK: - LifeCircle Function
-extension AppManageHomeController {
+extension SampleManageHomeController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initialUI()
@@ -41,11 +41,11 @@ extension AppManageHomeController {
 }
 
 // MARK: - UI
-extension AppManageHomeController {
+extension SampleManageHomeController {
     fileprivate func initialUI() -> Void {
         self.view.backgroundColor = UIColor.white
         // 1. navigationbar
-        self.navigationItem.title = "ManageHome"  // "应用管理"
+        self.navigationItem.title = "SampleManage"
         // 2. tableView
         self.view.addSubview(tableView)
         tableView.dataSource = self
@@ -65,7 +65,7 @@ extension AppManageHomeController {
 }
 
 // MARK: - Data(数据处理与加载)
-extension AppManageHomeController {
+extension SampleManageHomeController {
     // MARK: - Private  数据处理与加载
     fileprivate func initialDataSource() -> Void {
         
@@ -73,67 +73,58 @@ extension AppManageHomeController {
 }
 
 // MARK: - Event(事件响应)
-extension AppManageHomeController {
+extension SampleManageHomeController {
     
 }
 
 // MARK; - Request(网络请求)
-extension AppManageHomeController {
+extension SampleManageHomeController {
     
 }
 
 // MARK: - Enter Page
-extension AppManageHomeController {
+extension SampleManageHomeController {
     fileprivate func cellSelectedProcess(with model: String) -> Void {
         switch model {
-        case "SampleManage":
-            self.enterSampleManage()
-        case "XDBrowser":
-            self.enterXDBrowser()
-        case "XDContacts":
-            self.enterXDContacts()
-        case "XDProjectManage":
-            self.enterXDProjectManage()
+        case "RxSwift":
+            self.enterRxSwiftSample()
+        case "SwiftUI":
+            self.enterSwiftUISample()
+        case "LeftMenuRightMenu":
+            self.enterLeftMenuRightMenuSample()
         default:
             break
         }
     }
-    fileprivate func enterSampleManage() -> Void {
-        let sampleVC = SampleManageHomeController.init()
-        let sampleNC = BaseNavigationController.init(rootViewController: sampleVC)
-        let model = AppItemModel.init(type: .samplemanage, mainVC: sampleNC)
-        AppManager.share.swithApp(model)
+    fileprivate func enterRxSwiftSample() -> Void {
+        let model = SampleItemModel.init(type: .rxsiwft, mainVC: RxSwiftSampleMainController.init())
+        SampleManager.share.swithSample(model)
     }
-    fileprivate func enterXDBrowser() -> Void {
-        let model = AppItemModel.init(type: .xdbrowser, mainVC: XDBrowserMainController.init())
-        AppManager.share.swithApp(model)
+    fileprivate func enterSwiftUISample() -> Void {
+        let model = SampleItemModel.init(type: .swiftui, mainVC: SwiftUISampleMainController.init())
+        SampleManager.share.swithSample(model)
     }
-    fileprivate func enterXDContacts() -> Void {
-        
+    fileprivate func enterLeftMenuRightMenuSample() -> Void {
+        let model = SampleItemModel.init(type: .lrmenu, mainVC: LRMenuSampleMainController.init())
+        SampleManager.share.swithSample(model)
     }
-    fileprivate func enterXDProjectManage() -> Void {
-        let model = AppItemModel.init(type: .projectmanage, mainVC: XDProjectManageMainController.init())
-        AppManager.share.swithApp(model)
-    }
-    
-    
     
 }
 
 // MARK: - Notification
-extension AppManageHomeController {
+extension SampleManageHomeController {
     
 }
 
 // MARK: - Extension
-extension AppManageHomeController {
+extension SampleManageHomeController {
     
 }
 
 // MARK: - Delegate Function
 
 // MARK: - <UITableViewDataSource>
-extension AppManageHomeController: UITableViewDataSource {
+extension SampleManageHomeController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -163,7 +154,7 @@ extension AppManageHomeController: UITableViewDataSource {
 }
 
 // MARK: - <UITableViewDelegate>
-extension AppManageHomeController: UITableViewDelegate {
+extension SampleManageHomeController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         //return UITableView.automaticDimension
