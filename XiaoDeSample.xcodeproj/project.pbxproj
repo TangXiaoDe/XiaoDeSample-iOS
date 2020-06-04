@@ -814,6 +814,7 @@
 		53F745C524877411007B6A0F /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				53B2DDDA2488C79200F10263 /* MultiSample */,
 				53F7473A24879EB0007B6A0F /* MultiApp */,
 				53F745C624877411007B6A0F /* Util */,
 				53F745C724877411007B6A0F /* Config */,
@@ -1603,7 +1604,6 @@
 		53F7473A24879EB0007B6A0F /* MultiApp */ = {
 			isa = PBXGroup;
 			children = (
-				53B2DDDA2488C79200F10263 /* MultiSample */,
 				53B2DD742488962E00F10263 /* XDProjectManage */,
 				53F7473B24879EF8007B6A0F /* AppManage */,
 				53F7474024879EF8007B6A0F /* XDBrowser */,
