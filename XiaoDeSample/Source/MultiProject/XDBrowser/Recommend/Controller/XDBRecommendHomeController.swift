@@ -1,14 +1,14 @@
 //
-//  XDBrowserMainController.swift
+//  XDBRecommendHomeController.swift
 //  XiaoDeSample
 //
 //  Created by 小唐 on 2020/6/3.
-//  Copyright © 2020 XiaoDe. All rights reserved.
+//  Copyright © 2020 XiaoDeStudio. All rights reserved.
 //
 
 import UIKit
 
-class XDBrowserMainController: BaseViewController {
+class XDBRecommendHomeController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

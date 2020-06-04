@@ -97,7 +97,8 @@ extension ProjectManageHomeController {
         }
     }
     fileprivate func enterXDBrowser() -> Void {
-        
+        let model = ProjectItemModel.init(type: .xdbrowser, mainVC: XDBrowserMainController.init())
+        ProjectManager.share.swithProject(model)
     }
     fileprivate func enterXDContacts() -> Void {
         
