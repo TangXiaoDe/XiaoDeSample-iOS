@@ -15,6 +15,8 @@ enum AppType {
     case appmanage
     /// XD浏览器
     case xdbrowser
+    /// XD项目管理
+    case projectmanage
 }
 
 class AppItemModel
@@ -38,8 +40,8 @@ class AppManager
     }
     
     /// 项目切换
-    func swithProject(_ project: AppItemModel) -> Void {
-        RootManager.share.type = .custom(rootVC: project.mainVC)
+    func swithApp(_ app: AppItemModel) -> Void {
+        RootManager.share.type = .custom(rootVC: app.mainVC)
     }
     
 

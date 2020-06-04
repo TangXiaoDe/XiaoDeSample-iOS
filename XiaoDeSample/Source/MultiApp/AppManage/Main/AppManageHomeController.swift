@@ -16,7 +16,7 @@ class AppManageHomeController: BaseViewController
     // MARK: - Private Property
     fileprivate let tableView: UITableView = UITableView(frame: CGRect.zero, style: .plain)
     
-    fileprivate var sourceList: [String] = ["XDBrowser", "XDContacts", "XDBookMarks"]
+    fileprivate var sourceList: [String] = ["XDBrowser", "XDContacts", "XDProjectManage"]
     
     // MARK: - Initialize Function
     init() {
@@ -90,21 +90,22 @@ extension AppManageHomeController {
             self.enterXDBrowser()
         case "XDContacts":
             self.enterXDContacts()
-        case "XDBookMarks":
-            self.enterXDBookMarks()
+        case "XDProjectManage":
+            self.enterXDProjectManage()
         default:
             break
         }
     }
     fileprivate func enterXDBrowser() -> Void {
         let model = AppItemModel.init(type: .xdbrowser, mainVC: XDBrowserMainController.init())
-        AppManager.share.swithProject(model)
+        AppManager.share.swithApp(model)
     }
     fileprivate func enterXDContacts() -> Void {
         
     }
-    fileprivate func enterXDBookMarks() -> Void {
-        
+    fileprivate func enterXDProjectManage() -> Void {
+        let model = AppItemModel.init(type: .projectmanage, mainVC: XDProjectManageMainController.init())
+        AppManager.share.swithApp(model)
     }
     
     

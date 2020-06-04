@@ -7,22 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		53B2DD8C2488966900F10263 /* XDPProgressHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DD8B2488966900F10263 /* XDPProgressHomeController.swift */; };
-		53B2DD8E2488967600F10263 /* XDPProgressPlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DD8D2488967600F10263 /* XDPProgressPlaceModel.swift */; };
-		53B2DD902488967F00F10263 /* XDPProgressPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DD8F2488967F00F10263 /* XDPProgressPlaceView.swift */; };
 		53B2DD922488969200F10263 /* XDPTodoHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DD912488969200F10263 /* XDPTodoHomeController.swift */; };
 		53B2DD94248896A400F10263 /* XDPTodoPlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DD93248896A400F10263 /* XDPTodoPlaceModel.swift */; };
 		53B2DD96248896CF00F10263 /* XDPTodoPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DD95248896CF00F10263 /* XDPTodoPlaceView.swift */; };
-		53B2DD98248896E000F10263 /* XDPProjectHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DD97248896E000F10263 /* XDPProjectHomeController.swift */; };
-		53B2DD9A248896EE00F10263 /* XDPProjectPlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DD99248896EE00F10263 /* XDPProjectPlaceModel.swift */; };
-		53B2DD9C248896FB00F10263 /* XDPProjectPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DD9B248896FB00F10263 /* XDPProjectPlaceView.swift */; };
-		53B2DD9E2488970D00F10263 /* XDPTeamHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DD9D2488970D00F10263 /* XDPTeamHomeController.swift */; };
-		53B2DDA02488971D00F10263 /* XDPTeamPlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DD9F2488971D00F10263 /* XDPTeamPlaceModel.swift */; };
-		53B2DDA22488972C00F10263 /* XDPTeamPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DDA12488972C00F10263 /* XDPTeamPlaceView.swift */; };
 		53B2DDA42488973C00F10263 /* XDPMineHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DDA32488973C00F10263 /* XDPMineHomeController.swift */; };
 		53B2DDA62488974700F10263 /* XDPMinePlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DDA52488974700F10263 /* XDPMinePlaceModel.swift */; };
 		53B2DDA82488975600F10263 /* XDPMinePlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DDA72488975500F10263 /* XDPMinePlaceView.swift */; };
 		53B2DDAA2488977100F10263 /* XDProjectManageMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DDA92488977100F10263 /* XDProjectManageMainController.swift */; };
+		53B2DDB3248898F900F10263 /* XDPProjectHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DDAE248898F900F10263 /* XDPProjectHomeController.swift */; };
+		53B2DDB4248898F900F10263 /* XDPProjectPlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DDB0248898F900F10263 /* XDPProjectPlaceModel.swift */; };
+		53B2DDB5248898F900F10263 /* XDPProjectPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DDB2248898F900F10263 /* XDPProjectPlaceView.swift */; };
+		53B2DDC52488992500F10263 /* XDPProgressPlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DDBA2488992500F10263 /* XDPProgressPlaceModel.swift */; };
+		53B2DDC62488992500F10263 /* XDPProgressPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DDBC2488992500F10263 /* XDPProgressPlaceView.swift */; };
+		53B2DDC82488992500F10263 /* XDPTeamPlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DDC12488992500F10263 /* XDPTeamPlaceModel.swift */; };
+		53B2DDC92488992500F10263 /* XDPTeamPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DDC32488992500F10263 /* XDPTeamPlaceView.swift */; };
+		53B2DDCB2488996300F10263 /* XDPProjectProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DDCA2488996300F10263 /* XDPProjectProgressController.swift */; };
+		53B2DDCD2488997700F10263 /* XDPProjectTeamController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DDCC2488997700F10263 /* XDPProjectTeamController.swift */; };
+		53B2DDD5248899D600F10263 /* XDPProjectTodoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DDD0248899D600F10263 /* XDPProjectTodoController.swift */; };
+		53B2DDD6248899D600F10263 /* XDPProjectTodoPlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DDD2248899D600F10263 /* XDPProjectTodoPlaceModel.swift */; };
+		53B2DDD7248899D600F10263 /* XDPProjectTodoPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DDD4248899D600F10263 /* XDPProjectTodoPlaceView.swift */; };
 		53F745992487704C007B6A0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53F745972487704C007B6A0F /* Main.storyboard */; };
 		53F7459B2487704E007B6A0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53F7459A2487704E007B6A0F /* Assets.xcassets */; };
 		53F7459E2487704E007B6A0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53F7459C2487704E007B6A0F /* LaunchScreen.storyboard */; };
@@ -194,23 +197,26 @@
 		08560C9C4B8CE0AB978A6ECE /* Pods-XiaoDeSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XiaoDeSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-XiaoDeSampleTests/Pods-XiaoDeSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		49C51AA1FA2E1BC0CFF9C11A /* Pods_XiaoDeSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XiaoDeSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53B2DD8A2488964300F10263 /* ProjectManageReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ProjectManageReadMe.md; sourceTree = "<group>"; };
-		53B2DD8B2488966900F10263 /* XDPProgressHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDPProgressHomeController.swift; sourceTree = "<group>"; };
-		53B2DD8D2488967600F10263 /* XDPProgressPlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDPProgressPlaceModel.swift; sourceTree = "<group>"; };
-		53B2DD8F2488967F00F10263 /* XDPProgressPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDPProgressPlaceView.swift; sourceTree = "<group>"; };
 		53B2DD912488969200F10263 /* XDPTodoHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDPTodoHomeController.swift; sourceTree = "<group>"; };
 		53B2DD93248896A400F10263 /* XDPTodoPlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDPTodoPlaceModel.swift; sourceTree = "<group>"; };
 		53B2DD95248896CF00F10263 /* XDPTodoPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDPTodoPlaceView.swift; sourceTree = "<group>"; };
-		53B2DD97248896E000F10263 /* XDPProjectHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDPProjectHomeController.swift; sourceTree = "<group>"; };
-		53B2DD99248896EE00F10263 /* XDPProjectPlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDPProjectPlaceModel.swift; sourceTree = "<group>"; };
-		53B2DD9B248896FB00F10263 /* XDPProjectPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDPProjectPlaceView.swift; sourceTree = "<group>"; };
-		53B2DD9D2488970D00F10263 /* XDPTeamHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDPTeamHomeController.swift; sourceTree = "<group>"; };
-		53B2DD9F2488971D00F10263 /* XDPTeamPlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDPTeamPlaceModel.swift; sourceTree = "<group>"; };
-		53B2DDA12488972C00F10263 /* XDPTeamPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDPTeamPlaceView.swift; sourceTree = "<group>"; };
 		53B2DDA32488973C00F10263 /* XDPMineHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDPMineHomeController.swift; sourceTree = "<group>"; };
 		53B2DDA52488974700F10263 /* XDPMinePlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDPMinePlaceModel.swift; sourceTree = "<group>"; };
 		53B2DDA72488975500F10263 /* XDPMinePlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDPMinePlaceView.swift; sourceTree = "<group>"; };
 		53B2DDA92488977100F10263 /* XDProjectManageMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDProjectManageMainController.swift; sourceTree = "<group>"; };
 		53B2DDAB248897C600F10263 /* XDBrowserReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = XDBrowserReadMe.md; sourceTree = "<group>"; };
+		53B2DDAE248898F900F10263 /* XDPProjectHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDPProjectHomeController.swift; sourceTree = "<group>"; };
+		53B2DDB0248898F900F10263 /* XDPProjectPlaceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDPProjectPlaceModel.swift; sourceTree = "<group>"; };
+		53B2DDB2248898F900F10263 /* XDPProjectPlaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDPProjectPlaceView.swift; sourceTree = "<group>"; };
+		53B2DDBA2488992500F10263 /* XDPProgressPlaceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDPProgressPlaceModel.swift; sourceTree = "<group>"; };
+		53B2DDBC2488992500F10263 /* XDPProgressPlaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDPProgressPlaceView.swift; sourceTree = "<group>"; };
+		53B2DDC12488992500F10263 /* XDPTeamPlaceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDPTeamPlaceModel.swift; sourceTree = "<group>"; };
+		53B2DDC32488992500F10263 /* XDPTeamPlaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDPTeamPlaceView.swift; sourceTree = "<group>"; };
+		53B2DDCA2488996300F10263 /* XDPProjectProgressController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDPProjectProgressController.swift; sourceTree = "<group>"; };
+		53B2DDCC2488997700F10263 /* XDPProjectTeamController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDPProjectTeamController.swift; sourceTree = "<group>"; };
+		53B2DDD0248899D600F10263 /* XDPProjectTodoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDPProjectTodoController.swift; sourceTree = "<group>"; };
+		53B2DDD2248899D600F10263 /* XDPProjectTodoPlaceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDPProjectTodoPlaceModel.swift; sourceTree = "<group>"; };
+		53B2DDD4248899D600F10263 /* XDPProjectTodoPlaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDPProjectTodoPlaceView.swift; sourceTree = "<group>"; };
 		53F7458E2487704C007B6A0F /* XiaoDeSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XiaoDeSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53F745982487704C007B6A0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		53F7459A2487704E007B6A0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -413,48 +419,12 @@
 			isa = PBXGroup;
 			children = (
 				53B2DD8A2488964300F10263 /* ProjectManageReadMe.md */,
-				53B2DD752488962E00F10263 /* Progress */,
 				53B2DD792488962E00F10263 /* Todo */,
 				53B2DD7D2488962E00F10263 /* Project */,
-				53B2DD812488962E00F10263 /* Team */,
 				53B2DD852488962E00F10263 /* Mine */,
 				53B2DD892488962E00F10263 /* Main */,
 			);
 			path = XDProjectManage;
-			sourceTree = "<group>";
-		};
-		53B2DD752488962E00F10263 /* Progress */ = {
-			isa = PBXGroup;
-			children = (
-				53B2DD762488962E00F10263 /* Controller */,
-				53B2DD772488962E00F10263 /* Model */,
-				53B2DD782488962E00F10263 /* View */,
-			);
-			path = Progress;
-			sourceTree = "<group>";
-		};
-		53B2DD762488962E00F10263 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				53B2DD8B2488966900F10263 /* XDPProgressHomeController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		53B2DD772488962E00F10263 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				53B2DD8D2488967600F10263 /* XDPProgressPlaceModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		53B2DD782488962E00F10263 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				53B2DD8F2488967F00F10263 /* XDPProgressPlaceView.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		53B2DD792488962E00F10263 /* Todo */ = {
@@ -494,69 +464,12 @@
 		53B2DD7D2488962E00F10263 /* Project */ = {
 			isa = PBXGroup;
 			children = (
-				53B2DD7E2488962E00F10263 /* Controller */,
-				53B2DD7F2488962E00F10263 /* Model */,
-				53B2DD802488962E00F10263 /* View */,
+				53B2DDCE248899D600F10263 /* Todo */,
+				53B2DDB62488992500F10263 /* Progress */,
+				53B2DDBD2488992500F10263 /* Team */,
+				53B2DDAC248898F900F10263 /* Home */,
 			);
 			path = Project;
-			sourceTree = "<group>";
-		};
-		53B2DD7E2488962E00F10263 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				53B2DD97248896E000F10263 /* XDPProjectHomeController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		53B2DD7F2488962E00F10263 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				53B2DD99248896EE00F10263 /* XDPProjectPlaceModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		53B2DD802488962E00F10263 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				53B2DD9B248896FB00F10263 /* XDPProjectPlaceView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		53B2DD812488962E00F10263 /* Team */ = {
-			isa = PBXGroup;
-			children = (
-				53B2DD822488962E00F10263 /* Controller */,
-				53B2DD832488962E00F10263 /* Model */,
-				53B2DD842488962E00F10263 /* View */,
-			);
-			path = Team;
-			sourceTree = "<group>";
-		};
-		53B2DD822488962E00F10263 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				53B2DD9D2488970D00F10263 /* XDPTeamHomeController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		53B2DD832488962E00F10263 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				53B2DD9F2488971D00F10263 /* XDPTeamPlaceModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		53B2DD842488962E00F10263 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				53B2DDA12488972C00F10263 /* XDPTeamPlaceView.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		53B2DD852488962E00F10263 /* Mine */ = {
@@ -599,6 +512,142 @@
 				53B2DDA92488977100F10263 /* XDProjectManageMainController.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		53B2DDAC248898F900F10263 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				53B2DDAD248898F900F10263 /* Controller */,
+				53B2DDAF248898F900F10263 /* Model */,
+				53B2DDB1248898F900F10263 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		53B2DDAD248898F900F10263 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				53B2DDAE248898F900F10263 /* XDPProjectHomeController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		53B2DDAF248898F900F10263 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				53B2DDB0248898F900F10263 /* XDPProjectPlaceModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		53B2DDB1248898F900F10263 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				53B2DDB2248898F900F10263 /* XDPProjectPlaceView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53B2DDB62488992500F10263 /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				53B2DDB72488992500F10263 /* Controller */,
+				53B2DDB92488992500F10263 /* Model */,
+				53B2DDBB2488992500F10263 /* View */,
+			);
+			path = Progress;
+			sourceTree = "<group>";
+		};
+		53B2DDB72488992500F10263 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				53B2DDCA2488996300F10263 /* XDPProjectProgressController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		53B2DDB92488992500F10263 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				53B2DDBA2488992500F10263 /* XDPProgressPlaceModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		53B2DDBB2488992500F10263 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				53B2DDBC2488992500F10263 /* XDPProgressPlaceView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53B2DDBD2488992500F10263 /* Team */ = {
+			isa = PBXGroup;
+			children = (
+				53B2DDBE2488992500F10263 /* Controller */,
+				53B2DDC02488992500F10263 /* Model */,
+				53B2DDC22488992500F10263 /* View */,
+			);
+			path = Team;
+			sourceTree = "<group>";
+		};
+		53B2DDBE2488992500F10263 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				53B2DDCC2488997700F10263 /* XDPProjectTeamController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		53B2DDC02488992500F10263 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				53B2DDC12488992500F10263 /* XDPTeamPlaceModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		53B2DDC22488992500F10263 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				53B2DDC32488992500F10263 /* XDPTeamPlaceView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53B2DDCE248899D600F10263 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				53B2DDCF248899D600F10263 /* Controller */,
+				53B2DDD1248899D600F10263 /* Model */,
+				53B2DDD3248899D600F10263 /* View */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		53B2DDCF248899D600F10263 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				53B2DDD0248899D600F10263 /* XDPProjectTodoController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		53B2DDD1248899D600F10263 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				53B2DDD2248899D600F10263 /* XDPProjectTodoPlaceModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		53B2DDD3248899D600F10263 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				53B2DDD4248899D600F10263 /* XDPProjectTodoPlaceView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		53F745852487704C007B6A0F = {
@@ -2005,20 +2054,19 @@
 				53F7467824879B19007B6A0F /* AccountTokenModel.swift in Sources */,
 				53F7467224879B19007B6A0F /* AccountLoginObject.swift in Sources */,
 				53F7471B24879CB3007B6A0F /* RightMenuHomeController.swift in Sources */,
-				53B2DDA02488971D00F10263 /* XDPTeamPlaceModel.swift in Sources */,
 				53F7463E24879A9D007B6A0F /* AppNotification.swift in Sources */,
 				53F747692487AC53007B6A0F /* XDBrowserWebController.swift in Sources */,
 				53F7468124879B19007B6A0F /* UITextField+LocalExtension.swift in Sources */,
 				53F7467F24879B19007B6A0F /* String+URL.swift in Sources */,
-				53B2DD8E2488967600F10263 /* XDPProgressPlaceModel.swift in Sources */,
 				53F746CE24879B22007B6A0F /* VerionUpdateController.swift in Sources */,
 				53F7471724879CB3007B6A0F /* LoginPlaceView.swift in Sources */,
 				53F7462124879957007B6A0F /* ThirdConfig.swift in Sources */,
-				53B2DD98248896E000F10263 /* XDPProjectHomeController.swift in Sources */,
+				53B2DDD7248899D600F10263 /* XDPProjectTodoPlaceView.swift in Sources */,
 				53F7471124879CB3007B6A0F /* UserTagModel.swift in Sources */,
 				53B2DDA42488973C00F10263 /* XDPMineHomeController.swift in Sources */,
 				53F746EF24879C5F007B6A0F /* LaunchGuideController.swift in Sources */,
 				53F7473624879D2C007B6A0F /* TestViewController.swift in Sources */,
+				53B2DDB4248898F900F10263 /* XDPProjectPlaceModel.swift in Sources */,
 				53F7466F24879B19007B6A0F /* UserTagObject.swift in Sources */,
 				53B2DD922488969200F10263 /* XDPTodoHomeController.swift in Sources */,
 				53F7467624879B19007B6A0F /* AccountLoginModel.swift in Sources */,
@@ -2026,11 +2074,11 @@
 				53F7471824879CB3007B6A0F /* LeftMenuHomeController.swift in Sources */,
 				53F7468324879B19007B6A0F /* UIImage+Extension.swift in Sources */,
 				53F7462324879957007B6A0F /* AppConfig.swift in Sources */,
-				53B2DD9C248896FB00F10263 /* XDPProjectPlaceView.swift in Sources */,
 				53F746E324879B69007B6A0F /* BaseNavigationController.swift in Sources */,
-				53B2DD9E2488970D00F10263 /* XDPTeamHomeController.swift in Sources */,
+				53B2DDC62488992500F10263 /* XDPProgressPlaceView.swift in Sources */,
 				53F7461E24879957007B6A0F /* AppThemeConfig.swift in Sources */,
 				53F745E824877411007B6A0F /* AppDelegate.swift in Sources */,
+				53B2DDD6248899D600F10263 /* XDPProjectTodoPlaceModel.swift in Sources */,
 				53F747832487AED0007B6A0F /* XDBRecommendHomeController.swift in Sources */,
 				53F7464324879AB9007B6A0F /* AppUtil.swift in Sources */,
 				53F745E924877411007B6A0F /* SceneDelegate.swift in Sources */,
@@ -2038,6 +2086,7 @@
 				53F7467E24879B19007B6A0F /* String+QRCode.swift in Sources */,
 				53F746D024879B22007B6A0F /* VersionManager.swift in Sources */,
 				53F746CC24879B22007B6A0F /* XDNestScrollContainerView.swift in Sources */,
+				53B2DDB5248898F900F10263 /* XDPProjectPlaceView.swift in Sources */,
 				53F746D624879B22007B6A0F /* AreaPicker.swift in Sources */,
 				53F7472E24879CEB007B6A0F /* MainTabBarController.swift in Sources */,
 				53F746D324879B22007B6A0F /* AreaManager.swift in Sources */,
@@ -2050,7 +2099,6 @@
 				53F7472D24879CEB007B6A0F /* SecondHomeController.swift in Sources */,
 				53F746EB24879C0C007B6A0F /* RootViewController.swift in Sources */,
 				53F7471D24879CB3007B6A0F /* RightMenuPlaceView.swift in Sources */,
-				53B2DD9A248896EE00F10263 /* XDPProjectPlaceModel.swift in Sources */,
 				53F746DB24879B22007B6A0F /* TZImagePickerHelper.swift in Sources */,
 				53F746C124879B22007B6A0F /* SystemRequestInfo.swift in Sources */,
 				53B2DDA82488975600F10263 /* XDPMinePlaceView.swift in Sources */,
@@ -2067,18 +2115,21 @@
 				53F746DF24879B22007B6A0F /* XDTransformType.swift in Sources */,
 				53F7472C24879CEB007B6A0F /* FourthHomeController.swift in Sources */,
 				53F747672487AC39007B6A0F /* XDBBookMarkHomeController.swift in Sources */,
+				53B2DDD5248899D600F10263 /* XDPProjectTodoController.swift in Sources */,
 				53F747892487B362007B6A0F /* XDBBookMarkListCell.swift in Sources */,
 				53F7467324879B19007B6A0F /* AccountTokenObject.swift in Sources */,
+				53B2DDCD2488997700F10263 /* XDPProjectTeamController.swift in Sources */,
 				53F747532487AB0B007B6A0F /* XDBrowserMainController.swift in Sources */,
 				53F746C324879B22007B6A0F /* AccountRequestInfo.swift in Sources */,
 				53F7474824879EF8007B6A0F /* AppManageHomeController.swift in Sources */,
-				53B2DDA22488972C00F10263 /* XDPTeamPlaceView.swift in Sources */,
 				53B2DD94248896A400F10263 /* XDPTodoPlaceModel.swift in Sources */,
+				53B2DDB3248898F900F10263 /* XDPProjectHomeController.swift in Sources */,
 				53F746DD24879B22007B6A0F /* XDRefreshHeader.swift in Sources */,
 				53F7472724879CEB007B6A0F /* MainTabBarController+Extension.swift in Sources */,
+				53B2DDCB2488996300F10263 /* XDPProjectProgressController.swift in Sources */,
+				53B2DDC92488992500F10263 /* XDPTeamPlaceView.swift in Sources */,
 				53F7467924879B19007B6A0F /* AccountManager.swift in Sources */,
 				53F7463F24879A9D007B6A0F /* AppConstant.swift in Sources */,
-				53B2DD902488967F00F10263 /* XDPProgressPlaceView.swift in Sources */,
 				53F7467124879B19007B6A0F /* AccountObject.swift in Sources */,
 				53F7474724879EF8007B6A0F /* AppManager.swift in Sources */,
 				53F7468224879B19007B6A0F /* NSAttributedString+Extension.swift in Sources */,
@@ -2087,6 +2138,7 @@
 				53F746C224879B22007B6A0F /* SystemNetworkManager.swift in Sources */,
 				53F7471A24879CB3007B6A0F /* LeftMenuPlaceView.swift in Sources */,
 				53F747852487AEEA007B6A0F /* XDBVideoHomeController.swift in Sources */,
+				53B2DDC52488992500F10263 /* XDPProgressPlaceModel.swift in Sources */,
 				53F7467B24879B19007B6A0F /* Kingfisher+Extension.swift in Sources */,
 				53F7462524879957007B6A0F /* BundleInfoModel.swift in Sources */,
 				53F7467724879B19007B6A0F /* AccountModel.swift in Sources */,
@@ -2107,9 +2159,9 @@
 				53F7470F24879CB3007B6A0F /* UserPlaceController.swift in Sources */,
 				53F7476D2487AC71007B6A0F /* XDBMineHomeController.swift in Sources */,
 				53F746CA24879B22007B6A0F /* RequetsResultCode.swift in Sources */,
+				53B2DDC82488992500F10263 /* XDPTeamPlaceModel.swift in Sources */,
 				53F7461D24879957007B6A0F /* AppInternalConfig.swift in Sources */,
 				53F746C524879B22007B6A0F /* IMeetReachability.swift in Sources */,
-				53B2DD8C2488966900F10263 /* XDPProgressHomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

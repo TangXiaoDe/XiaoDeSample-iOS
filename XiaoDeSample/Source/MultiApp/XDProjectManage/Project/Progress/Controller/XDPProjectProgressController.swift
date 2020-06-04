@@ -1,14 +1,15 @@
 //
-//  XDPProgressHomeController.swift
+//  XDPProjectProgressController.swift
 //  XiaoDeSample
 //
 //  Created by 小唐 on 2020/6/4.
 //  Copyright © 2020 XiaoDeStudio. All rights reserved.
 //
+//  项目进度页
 
 import UIKit
 
-class XDPProgressHomeController: BaseViewController {
+class XDPProjectProgressController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

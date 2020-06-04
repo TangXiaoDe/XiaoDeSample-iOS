@@ -1,14 +1,15 @@
 //
-//  XDPTeamHomeController.swift
+//  XDPProjectTeamController.swift
 //  XiaoDeSample
 //
 //  Created by 小唐 on 2020/6/4.
 //  Copyright © 2020 XiaoDeStudio. All rights reserved.
 //
+//  项目团队界面
 
 import UIKit
 
-class XDPTeamHomeController: BaseViewController {
+class XDPProjectTeamController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
