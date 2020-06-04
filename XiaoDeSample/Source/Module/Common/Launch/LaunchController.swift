@@ -88,7 +88,7 @@ extension LaunchController {
         }
     }
     fileprivate func enterProjectManagePage() -> Void {
-        let manageVC = ProjectManageHomeController.init()
+        let manageVC = AppManageHomeController.init()
         let manageNC = BaseNavigationController.init(rootViewController: manageVC)
         RootManager.share.switchRoot(RootType.custom(rootVC: manageNC))
     }

@@ -1,5 +1,5 @@
 //
-//  ProjectManageHomeController.swift
+//  AppManageHomeController.swift
 //  XiaoDeSample
 //
 //  Created by 小唐 on 2020/6/2.
@@ -9,7 +9,7 @@
 
 import UIKit
 
-class ProjectManageHomeController: BaseViewController
+class AppManageHomeController: BaseViewController
 {
     
     // MARK: - Internal Property
@@ -32,7 +32,7 @@ class ProjectManageHomeController: BaseViewController
 // MARK: - Internal Function
 
 // MARK: - LifeCircle Function
-extension ProjectManageHomeController {
+extension AppManageHomeController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initialUI()
@@ -41,11 +41,11 @@ extension ProjectManageHomeController {
 }
 
 // MARK: - UI
-extension ProjectManageHomeController {
+extension AppManageHomeController {
     fileprivate func initialUI() -> Void {
         self.view.backgroundColor = UIColor.white
         // 1. navigationbar
-        self.navigationItem.title = "项目管理"
+        self.navigationItem.title = "ManageHome"  // "应用管理"
         // 2. tableView
         self.view.addSubview(tableView)
         tableView.dataSource = self
@@ -65,7 +65,7 @@ extension ProjectManageHomeController {
 }
 
 // MARK: - Data(数据处理与加载)
-extension ProjectManageHomeController {
+extension AppManageHomeController {
     // MARK: - Private  数据处理与加载
     fileprivate func initialDataSource() -> Void {
         
@@ -73,17 +73,17 @@ extension ProjectManageHomeController {
 }
 
 // MARK: - Event(事件响应)
-extension ProjectManageHomeController {
+extension AppManageHomeController {
     
 }
 
 // MARK; - Request(网络请求)
-extension ProjectManageHomeController {
+extension AppManageHomeController {
     
 }
 
 // MARK: - Enter Page
-extension ProjectManageHomeController {
+extension AppManageHomeController {
     fileprivate func cellSelectedProcess(with model: String) -> Void {
         switch model {
         case "XDBrowser":
@@ -97,8 +97,8 @@ extension ProjectManageHomeController {
         }
     }
     fileprivate func enterXDBrowser() -> Void {
-        let model = ProjectItemModel.init(type: .xdbrowser, mainVC: XDBrowserMainController.init())
-        ProjectManager.share.swithProject(model)
+        let model = AppItemModel.init(type: .xdbrowser, mainVC: XDBrowserMainController.init())
+        AppManager.share.swithProject(model)
     }
     fileprivate func enterXDContacts() -> Void {
         
@@ -112,19 +112,19 @@ extension ProjectManageHomeController {
 }
 
 // MARK: - Notification
-extension ProjectManageHomeController {
+extension AppManageHomeController {
     
 }
 
 // MARK: - Extension
-extension ProjectManageHomeController {
+extension AppManageHomeController {
     
 }
 
 // MARK: - Delegate Function
 
 // MARK: - <UITableViewDataSource>
-extension ProjectManageHomeController: UITableViewDataSource {
+extension AppManageHomeController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -154,7 +154,7 @@ extension ProjectManageHomeController: UITableViewDataSource {
 }
 
 // MARK: - <UITableViewDelegate>
-extension ProjectManageHomeController: UITableViewDelegate {
+extension AppManageHomeController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         //return UITableView.automaticDimension

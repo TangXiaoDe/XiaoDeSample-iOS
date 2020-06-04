@@ -1,28 +1,28 @@
 //
-//  ProjectManager.swift
+//  AppManager.swift
 //  XiaoDeSample
 //
 //  Created by 小唐 on 2020/6/2.
 //  Copyright © 2020 XiaoDe. All rights reserved.
 //
-//  项目管理 - 可切换项目
+//  应用管理 - 可切换应用
 
 import Foundation
 import UIKit
 
-enum ProjectType {
-    /// 项目管理器
-    case projectmanage
+enum AppType {
+    /// 应用管理器
+    case appmanage
     /// XD浏览器
     case xdbrowser
 }
 
-class ProjectItemModel
+class AppItemModel
 {
     let mainVC: UIViewController
-    let type: ProjectType
+    let type: AppType
 
-    init(type: ProjectType, mainVC: UIViewController) {
+    init(type: AppType, mainVC: UIViewController) {
         self.type = type
         self.mainVC = mainVC
     }
@@ -31,14 +31,14 @@ class ProjectItemModel
 
 
 /// 项目管理
-class ProjectManager
+class AppManager
 {
-    static let share = ProjectManager.init()
+    static let share = AppManager.init()
     fileprivate init() {
     }
     
     /// 项目切换
-    func swithProject(_ project: ProjectItemModel) -> Void {
+    func swithProject(_ project: AppItemModel) -> Void {
         RootManager.share.type = .custom(rootVC: project.mainVC)
     }
     

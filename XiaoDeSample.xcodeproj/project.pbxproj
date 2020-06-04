@@ -141,8 +141,8 @@
 		53F7473724879D2C007B6A0F /* TestHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F7473124879D2C007B6A0F /* TestHomeController.swift */; };
 		53F7473824879D2C007B6A0F /* TestPlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F7473324879D2C007B6A0F /* TestPlaceModel.swift */; };
 		53F7473924879D2C007B6A0F /* TestPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F7473524879D2C007B6A0F /* TestPlaceView.swift */; };
-		53F7474724879EF8007B6A0F /* ProjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F7473D24879EF8007B6A0F /* ProjectManager.swift */; };
-		53F7474824879EF8007B6A0F /* ProjectManageHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F7473F24879EF8007B6A0F /* ProjectManageHomeController.swift */; };
+		53F7474724879EF8007B6A0F /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F7473D24879EF8007B6A0F /* AppManager.swift */; };
+		53F7474824879EF8007B6A0F /* AppManageHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F7473F24879EF8007B6A0F /* AppManageHomeController.swift */; };
 		53F747532487AB0B007B6A0F /* XDBrowserMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F7474E2487AB0B007B6A0F /* XDBrowserMainController.swift */; };
 		53F747542487AB0B007B6A0F /* XDBrowserPlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F747502487AB0B007B6A0F /* XDBrowserPlaceModel.swift */; };
 		53F747552487AB0B007B6A0F /* XDBrowserPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F747522487AB0B007B6A0F /* XDBrowserPlaceView.swift */; };
@@ -325,8 +325,8 @@
 		53F7473124879D2C007B6A0F /* TestHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHomeController.swift; sourceTree = "<group>"; };
 		53F7473324879D2C007B6A0F /* TestPlaceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPlaceModel.swift; sourceTree = "<group>"; };
 		53F7473524879D2C007B6A0F /* TestPlaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPlaceView.swift; sourceTree = "<group>"; };
-		53F7473D24879EF8007B6A0F /* ProjectManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectManager.swift; sourceTree = "<group>"; };
-		53F7473F24879EF8007B6A0F /* ProjectManageHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectManageHomeController.swift; sourceTree = "<group>"; };
+		53F7473D24879EF8007B6A0F /* AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		53F7473F24879EF8007B6A0F /* AppManageHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManageHomeController.swift; sourceTree = "<group>"; };
 		53F7474E2487AB0B007B6A0F /* XDBrowserMainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDBrowserMainController.swift; sourceTree = "<group>"; };
 		53F747502487AB0B007B6A0F /* XDBrowserPlaceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDBrowserPlaceModel.swift; sourceTree = "<group>"; };
 		53F747522487AB0B007B6A0F /* XDBrowserPlaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDBrowserPlaceView.swift; sourceTree = "<group>"; };
@@ -448,7 +448,7 @@
 		53F745C524877411007B6A0F /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				53F7473A24879EB0007B6A0F /* MultiProject */,
+				53F7473A24879EB0007B6A0F /* MultiApp */,
 				53F745C624877411007B6A0F /* Util */,
 				53F745C724877411007B6A0F /* Config */,
 				53F745C824877411007B6A0F /* Module */,
@@ -1234,28 +1234,28 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		53F7473A24879EB0007B6A0F /* MultiProject */ = {
+		53F7473A24879EB0007B6A0F /* MultiApp */ = {
 			isa = PBXGroup;
 			children = (
-				53F7473B24879EF8007B6A0F /* ProjectManage */,
+				53F7473B24879EF8007B6A0F /* AppManage */,
 				53F7474024879EF8007B6A0F /* XDBrowser */,
 			);
-			path = MultiProject;
+			path = MultiApp;
 			sourceTree = "<group>";
 		};
-		53F7473B24879EF8007B6A0F /* ProjectManage */ = {
+		53F7473B24879EF8007B6A0F /* AppManage */ = {
 			isa = PBXGroup;
 			children = (
 				53F7473C24879EF8007B6A0F /* Manager */,
 				53F7473E24879EF8007B6A0F /* Main */,
 			);
-			path = ProjectManage;
+			path = AppManage;
 			sourceTree = "<group>";
 		};
 		53F7473C24879EF8007B6A0F /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				53F7473D24879EF8007B6A0F /* ProjectManager.swift */,
+				53F7473D24879EF8007B6A0F /* AppManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -1263,7 +1263,7 @@
 		53F7473E24879EF8007B6A0F /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				53F7473F24879EF8007B6A0F /* ProjectManageHomeController.swift */,
+				53F7473F24879EF8007B6A0F /* AppManageHomeController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -1866,13 +1866,13 @@
 				53F7467324879B19007B6A0F /* AccountTokenObject.swift in Sources */,
 				53F747532487AB0B007B6A0F /* XDBrowserMainController.swift in Sources */,
 				53F746C324879B22007B6A0F /* AccountRequestInfo.swift in Sources */,
-				53F7474824879EF8007B6A0F /* ProjectManageHomeController.swift in Sources */,
+				53F7474824879EF8007B6A0F /* AppManageHomeController.swift in Sources */,
 				53F746DD24879B22007B6A0F /* XDRefreshHeader.swift in Sources */,
 				53F7472724879CEB007B6A0F /* MainTabBarController+Extension.swift in Sources */,
 				53F7467924879B19007B6A0F /* AccountManager.swift in Sources */,
 				53F7463F24879A9D007B6A0F /* AppConstant.swift in Sources */,
 				53F7467124879B19007B6A0F /* AccountObject.swift in Sources */,
-				53F7474724879EF8007B6A0F /* ProjectManager.swift in Sources */,
+				53F7474724879EF8007B6A0F /* AppManager.swift in Sources */,
 				53F7468224879B19007B6A0F /* NSAttributedString+Extension.swift in Sources */,
 				53F746DE24879B22007B6A0F /* RealmHelper.swift in Sources */,
 				53F746C224879B22007B6A0F /* SystemNetworkManager.swift in Sources */,
