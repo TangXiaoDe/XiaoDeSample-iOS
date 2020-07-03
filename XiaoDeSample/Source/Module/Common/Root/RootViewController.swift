@@ -53,7 +53,7 @@ class RootViewController: UIViewController
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        return UIStatusBarStyle.lightContent
+        return UIStatusBarStyle.default
     }
 
     @objc fileprivate func run() -> Void {
