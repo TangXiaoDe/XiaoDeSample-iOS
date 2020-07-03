@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5389D85924AECF6D0017CC2A /* UISampleMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5389D85824AECF6D0017CC2A /* UISampleMainController.swift */; };
+		5389D86224AED4D00017CC2A /* UISAnimationHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5389D86124AED4D00017CC2A /* UISAnimationHomeController.swift */; };
+		5389D86424AED4DF0017CC2A /* UISCommonHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5389D86324AED4DF0017CC2A /* UISCommonHomeController.swift */; };
+		5389D86624AED4EC0017CC2A /* UISFunctionHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5389D86524AED4EC0017CC2A /* UISFunctionHomeController.swift */; };
 		53B2DD922488969200F10263 /* XDPTodoHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DD912488969200F10263 /* XDPTodoHomeController.swift */; };
 		53B2DD94248896A400F10263 /* XDPTodoPlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DD93248896A400F10263 /* XDPTodoPlaceModel.swift */; };
 		53B2DD96248896CF00F10263 /* XDPTodoPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DD95248896CF00F10263 /* XDPTodoPlaceView.swift */; };
@@ -201,6 +205,11 @@
 		071A59AA9D8BAB373A5F415A /* Pods-XiaoDeSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XiaoDeSampleTests.release.xcconfig"; path = "Target Support Files/Pods-XiaoDeSampleTests/Pods-XiaoDeSampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		08560C9C4B8CE0AB978A6ECE /* Pods-XiaoDeSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XiaoDeSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-XiaoDeSampleTests/Pods-XiaoDeSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		49C51AA1FA2E1BC0CFF9C11A /* Pods_XiaoDeSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XiaoDeSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5389D85824AECF6D0017CC2A /* UISampleMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISampleMainController.swift; sourceTree = "<group>"; };
+		5389D86024AED4540017CC2A /* UISampleREADME.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = UISampleREADME.md; sourceTree = "<group>"; };
+		5389D86124AED4D00017CC2A /* UISAnimationHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISAnimationHomeController.swift; sourceTree = "<group>"; };
+		5389D86324AED4DF0017CC2A /* UISCommonHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISCommonHomeController.swift; sourceTree = "<group>"; };
+		5389D86524AED4EC0017CC2A /* UISFunctionHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISFunctionHomeController.swift; sourceTree = "<group>"; };
 		53B2DD8A2488964300F10263 /* ProjectManageReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ProjectManageReadMe.md; sourceTree = "<group>"; };
 		53B2DD912488969200F10263 /* XDPTodoHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDPTodoHomeController.swift; sourceTree = "<group>"; };
 		53B2DD93248896A400F10263 /* XDPTodoPlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDPTodoPlaceModel.swift; sourceTree = "<group>"; };
@@ -423,6 +432,74 @@
 				49C51AA1FA2E1BC0CFF9C11A /* Pods_XiaoDeSampleTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5389D85624AECF540017CC2A /* UISample */ = {
+			isa = PBXGroup;
+			children = (
+				5389D85A24AED4460017CC2A /* Animation */,
+				5389D85E24AED4460017CC2A /* Common */,
+				5389D85C24AED4460017CC2A /* Function */,
+				5389D85724AECF540017CC2A /* Main */,
+			);
+			path = UISample;
+			sourceTree = "<group>";
+		};
+		5389D85724AECF540017CC2A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5389D85824AECF6D0017CC2A /* UISampleMainController.swift */,
+				5389D86024AED4540017CC2A /* UISampleREADME.md */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5389D85A24AED4460017CC2A /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				5389D85B24AED4460017CC2A /* Home */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		5389D85B24AED4460017CC2A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5389D86124AED4D00017CC2A /* UISAnimationHomeController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5389D85C24AED4460017CC2A /* Function */ = {
+			isa = PBXGroup;
+			children = (
+				5389D85D24AED4460017CC2A /* Home */,
+			);
+			path = Function;
+			sourceTree = "<group>";
+		};
+		5389D85D24AED4460017CC2A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5389D86524AED4EC0017CC2A /* UISFunctionHomeController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5389D85E24AED4460017CC2A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5389D85F24AED4460017CC2A /* Home */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5389D85F24AED4460017CC2A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5389D86324AED4DF0017CC2A /* UISCommonHomeController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		53B2DD742488962E00F10263 /* XDProjectManage */ = {
@@ -663,6 +740,7 @@
 		53B2DDDA2488C79200F10263 /* MultiSample */ = {
 			isa = PBXGroup;
 			children = (
+				5389D85624AECF540017CC2A /* UISample */,
 				53B2DDE62488CAB300F10263 /* LeftMenuRightMenu */,
 				53B2DDE22488CAB300F10263 /* RxSwift */,
 				53B2DDE42488CAB300F10263 /* SwiftUI */,
@@ -2121,6 +2199,7 @@
 			files = (
 				53F746C724879B22007B6A0F /* NetworkManager.swift in Sources */,
 				53F7472924879CEB007B6A0F /* ThirdHomeController.swift in Sources */,
+				5389D86624AED4EC0017CC2A /* UISFunctionHomeController.swift in Sources */,
 				53F746C024879B22007B6A0F /* LocationManager.swift in Sources */,
 				53F7471624879CB3007B6A0F /* LoginPlaceModel.swift in Sources */,
 				53F7473724879D2C007B6A0F /* TestHomeController.swift in Sources */,
@@ -2155,6 +2234,7 @@
 				53F747692487AC53007B6A0F /* XDBrowserWebController.swift in Sources */,
 				53F7468124879B19007B6A0F /* UITextField+LocalExtension.swift in Sources */,
 				53F7467F24879B19007B6A0F /* String+URL.swift in Sources */,
+				5389D86424AED4DF0017CC2A /* UISCommonHomeController.swift in Sources */,
 				53F746CE24879B22007B6A0F /* VerionUpdateController.swift in Sources */,
 				53B2DDE12488C7C000F10263 /* SampleManageHomeController.swift in Sources */,
 				53F7471724879CB3007B6A0F /* LoginPlaceView.swift in Sources */,
@@ -2169,6 +2249,7 @@
 				53F7466F24879B19007B6A0F /* UserTagObject.swift in Sources */,
 				53B2DD922488969200F10263 /* XDPTodoHomeController.swift in Sources */,
 				53F7467624879B19007B6A0F /* AccountLoginModel.swift in Sources */,
+				5389D86224AED4D00017CC2A /* UISAnimationHomeController.swift in Sources */,
 				53F746D724879B22007B6A0F /* XDGifImageView.swift in Sources */,
 				53F7471824879CB3007B6A0F /* LeftMenuHomeController.swift in Sources */,
 				53F7468324879B19007B6A0F /* UIImage+Extension.swift in Sources */,
@@ -2208,6 +2289,7 @@
 				53F7472824879CEB007B6A0F /* TabbarItemModel.swift in Sources */,
 				53F746CD24879B22007B6A0F /* XDNestScrollView.swift in Sources */,
 				53F7472B24879CEB007B6A0F /* FifthHomeController.swift in Sources */,
+				5389D85924AECF6D0017CC2A /* UISampleMainController.swift in Sources */,
 				53F7462624879957007B6A0F /* ServerAddressConfig.swift in Sources */,
 				53F7468524879B19007B6A0F /* CacheManager.swift in Sources */,
 				53F7468724879B19007B6A0F /* DateFormatter.swift in Sources */,

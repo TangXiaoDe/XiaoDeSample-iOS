@@ -11,6 +11,8 @@ import Foundation
 import UIKit
 
 enum SampleType {
+    /// UISample
+    case ui
     /// RxSwift
     case rxsiwft
     /// SwiftUI
