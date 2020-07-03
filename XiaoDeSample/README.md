@@ -23,6 +23,12 @@
 * 项目配置文档 (./Resource/Document/Project/ProjectConfig.md)
 
 
+### Source
+
+* 正常应用的模块划分：Util、Config、Module、Library；
+* MultiSample、MultiApp表示别的示例或应用，本质上不属于该App；
+
+
 ### TODO
 
 
