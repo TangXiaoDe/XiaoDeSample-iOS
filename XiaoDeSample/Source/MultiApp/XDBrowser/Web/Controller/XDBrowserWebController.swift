@@ -9,7 +9,8 @@
 
 import UIKit
 import WebKit
-import ChainOneKit
+//import ChainOneKit
+import XiaoDeKit
 
 enum XDBrowserWebSource {
     // open func loadRequest(_ request: URLRequest)

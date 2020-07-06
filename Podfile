@@ -21,7 +21,10 @@ pod 'MarkdownView'               # markdown 渲染器基于 webview
 pod 'SwiftLint'                 # SwiftLint 代码规范
 
 # 公司私有组件库
-pod 'ChainOneKit-Swift', :git => 'https://github.com/CommunityChain/ChainOneKit-Swift.git', :tag => '0.0.9.1'
+#pod 'ChainOneKit-Swift', :git => 'https://github.com/CommunityChain/ChainOneKit-Swift.git', :tag => '0.0.9.1'
+
+# 个人公开组件库
+pod 'XiaoDeKit-Swift', :git => 'https://github.com/TangXiaoDe/XiaoDeKit-Swift.git', :tag => '0.0.11'
 
 # Objective-C
 pod 'YYKit', '1.0.9'                      # iOS 组件
