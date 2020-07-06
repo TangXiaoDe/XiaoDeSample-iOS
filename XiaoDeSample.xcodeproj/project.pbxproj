@@ -944,6 +944,7 @@
 		53F745C824877411007B6A0F /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				53F7472024879CEB007B6A0F /* HomePage */,
 				53F7470124879CB3007B6A0F /* LeftMenu */,
 				53F746FA24879CB2007B6A0F /* LoginRegister */,
 				53F7470824879CB3007B6A0F /* RightMenu */,
@@ -1102,7 +1103,6 @@
 		53F7461024877960007B6A0F /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				53F7472024879CEB007B6A0F /* ChildPage */,
 				53F7472624879CEB007B6A0F /* MainTabBarController.swift */,
 				53F7471E24879CEB007B6A0F /* MainTabBarController+Extension.swift */,
 				53F7471F24879CEB007B6A0F /* TabbarItemModel.swift */,
@@ -1642,7 +1642,7 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		53F7472024879CEB007B6A0F /* ChildPage */ = {
+		53F7472024879CEB007B6A0F /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
 				53F7472124879CEB007B6A0F /* ThirdHomeController.swift */,
@@ -1651,7 +1651,7 @@
 				53F7472424879CEB007B6A0F /* FourthHomeController.swift */,
 				53F7472524879CEB007B6A0F /* SecondHomeController.swift */,
 			);
-			path = ChildPage;
+			path = HomePage;
 			sourceTree = "<group>";
 		};
 		53F7472F24879D2C007B6A0F /* Controller */ = {
