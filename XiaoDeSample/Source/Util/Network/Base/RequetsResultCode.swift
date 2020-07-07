@@ -3,7 +3,7 @@
 //  iMeet
 //
 //  Created by 小唐 on 2019/3/1.
-//  Copyright © 2019 ChainOne. All rights reserved.
+//  Copyright © 2019 XiaoDeStudio. All rights reserved.
 //
 //  业务码
 //  业务码与状态码的区别：

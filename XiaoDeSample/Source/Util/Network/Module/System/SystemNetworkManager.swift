@@ -3,7 +3,7 @@
 //  iMeet
 //
 //  Created by 小唐 on 2019/6/14.
-//  Copyright © 2019 ChainOne. All rights reserved.
+//  Copyright © 2019 XiaoDeStudio. All rights reserved.
 //
 //  系统相关请求接口
 

@@ -35,6 +35,17 @@
 		53B2DDE92488CACB00F10263 /* SwiftUISampleMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DDE82488CACB00F10263 /* SwiftUISampleMainController.swift */; };
 		53B2DDEB2488CAE500F10263 /* RxSwiftSampleMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DDEA2488CAE500F10263 /* RxSwiftSampleMainController.swift */; };
 		53B2DDED2488CB1300F10263 /* LRMenuSampleMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DDEC2488CB1300F10263 /* LRMenuSampleMainController.swift */; };
+		53EEAF5924B412C800D8A8FE /* PageDefaultTobeOpenedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EEAF4D24B412C800D8A8FE /* PageDefaultTobeOpenedView.swift */; };
+		53EEAF5A24B412C800D8A8FE /* PageDefaultNothingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EEAF4E24B412C800D8A8FE /* PageDefaultNothingView.swift */; };
+		53EEAF5B24B412C800D8A8FE /* PageDefaultNetErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EEAF4F24B412C800D8A8FE /* PageDefaultNetErrorView.swift */; };
+		53EEAF5C24B412C800D8A8FE /* PageDefaultErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EEAF5024B412C800D8A8FE /* PageDefaultErrorView.swift */; };
+		53EEAF5D24B412C800D8A8FE /* PageDefaultEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EEAF5124B412C800D8A8FE /* PageDefaultEmptyView.swift */; };
+		53EEAF5E24B412C800D8A8FE /* PageDefaultServerErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EEAF5224B412C800D8A8FE /* PageDefaultServerErrorView.swift */; };
+		53EEAF5F24B412C800D8A8FE /* PageDefaultLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EEAF5324B412C800D8A8FE /* PageDefaultLoadingView.swift */; };
+		53EEAF6024B412C800D8A8FE /* BaseTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EEAF5524B412C800D8A8FE /* BaseTabBar.swift */; };
+		53EEAF6124B412C800D8A8FE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EEAF5724B412C800D8A8FE /* BaseViewController.swift */; };
+		53EEAF6224B412C800D8A8FE /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EEAF5824B412C800D8A8FE /* BaseNavigationController.swift */; };
+		53EEAF6E24B412FB00D8A8FE /* ListEmptyPlaceHolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EEAF6624B412FB00D8A8FE /* ListEmptyPlaceHolderView.swift */; };
 		53F745992487704C007B6A0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53F745972487704C007B6A0F /* Main.storyboard */; };
 		53F7459B2487704E007B6A0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53F7459A2487704E007B6A0F /* Assets.xcassets */; };
 		53F7459E2487704E007B6A0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53F7459C2487704E007B6A0F /* LaunchScreen.storyboard */; };
@@ -134,9 +145,6 @@
 		53F746DD24879B22007B6A0F /* XDRefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F746BB24879B22007B6A0F /* XDRefreshHeader.swift */; };
 		53F746DE24879B22007B6A0F /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F746BD24879B22007B6A0F /* RealmHelper.swift */; };
 		53F746DF24879B22007B6A0F /* XDTransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F746BF24879B22007B6A0F /* XDTransformType.swift */; };
-		53F746E324879B69007B6A0F /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F746E024879B68007B6A0F /* BaseNavigationController.swift */; };
-		53F746E424879B69007B6A0F /* BaseTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F746E124879B68007B6A0F /* BaseTabBar.swift */; };
-		53F746E524879B69007B6A0F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F746E224879B69007B6A0F /* BaseViewController.swift */; };
 		53F746E724879BC3007B6A0F /* NetworkReadMe.md in Resources */ = {isa = PBXBuildFile; fileRef = 53F746E624879BC3007B6A0F /* NetworkReadMe.md */; };
 		53F746EA24879C0C007B6A0F /* RootManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F746E824879C0C007B6A0F /* RootManager.swift */; };
 		53F746EB24879C0C007B6A0F /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F746E924879C0C007B6A0F /* RootViewController.swift */; };
@@ -236,6 +244,17 @@
 		53B2DDE82488CACB00F10263 /* SwiftUISampleMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISampleMainController.swift; sourceTree = "<group>"; };
 		53B2DDEA2488CAE500F10263 /* RxSwiftSampleMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftSampleMainController.swift; sourceTree = "<group>"; };
 		53B2DDEC2488CB1300F10263 /* LRMenuSampleMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRMenuSampleMainController.swift; sourceTree = "<group>"; };
+		53EEAF4D24B412C800D8A8FE /* PageDefaultTobeOpenedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageDefaultTobeOpenedView.swift; sourceTree = "<group>"; };
+		53EEAF4E24B412C800D8A8FE /* PageDefaultNothingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageDefaultNothingView.swift; sourceTree = "<group>"; };
+		53EEAF4F24B412C800D8A8FE /* PageDefaultNetErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageDefaultNetErrorView.swift; sourceTree = "<group>"; };
+		53EEAF5024B412C800D8A8FE /* PageDefaultErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageDefaultErrorView.swift; sourceTree = "<group>"; };
+		53EEAF5124B412C800D8A8FE /* PageDefaultEmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageDefaultEmptyView.swift; sourceTree = "<group>"; };
+		53EEAF5224B412C800D8A8FE /* PageDefaultServerErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageDefaultServerErrorView.swift; sourceTree = "<group>"; };
+		53EEAF5324B412C800D8A8FE /* PageDefaultLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageDefaultLoadingView.swift; sourceTree = "<group>"; };
+		53EEAF5524B412C800D8A8FE /* BaseTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBar.swift; sourceTree = "<group>"; };
+		53EEAF5724B412C800D8A8FE /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		53EEAF5824B412C800D8A8FE /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		53EEAF6624B412FB00D8A8FE /* ListEmptyPlaceHolderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListEmptyPlaceHolderView.swift; sourceTree = "<group>"; };
 		53F7458E2487704C007B6A0F /* XiaoDeSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XiaoDeSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53F745982487704C007B6A0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		53F7459A2487704E007B6A0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -347,9 +366,6 @@
 		53F746BB24879B22007B6A0F /* XDRefreshHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDRefreshHeader.swift; sourceTree = "<group>"; };
 		53F746BD24879B22007B6A0F /* RealmHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
 		53F746BF24879B22007B6A0F /* XDTransformType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDTransformType.swift; sourceTree = "<group>"; };
-		53F746E024879B68007B6A0F /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
-		53F746E124879B68007B6A0F /* BaseTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBar.swift; sourceTree = "<group>"; };
-		53F746E224879B69007B6A0F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		53F746E624879BC3007B6A0F /* NetworkReadMe.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = NetworkReadMe.md; sourceTree = "<group>"; };
 		53F746E824879C0C007B6A0F /* RootManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootManager.swift; sourceTree = "<group>"; };
 		53F746E924879C0C007B6A0F /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -437,8 +453,8 @@
 		5389D85624AECF540017CC2A /* UISample */ = {
 			isa = PBXGroup;
 			children = (
-				5389D85A24AED4460017CC2A /* Animation */,
 				5389D85E24AED4460017CC2A /* Common */,
+				5389D85A24AED4460017CC2A /* Animation */,
 				5389D85C24AED4460017CC2A /* Function */,
 				5389D85724AECF540017CC2A /* Main */,
 			);
@@ -823,6 +839,45 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		53EEAF4C24B412C800D8A8FE /* PageDefault */ = {
+			isa = PBXGroup;
+			children = (
+				53EEAF4D24B412C800D8A8FE /* PageDefaultTobeOpenedView.swift */,
+				53EEAF4E24B412C800D8A8FE /* PageDefaultNothingView.swift */,
+				53EEAF4F24B412C800D8A8FE /* PageDefaultNetErrorView.swift */,
+				53EEAF5024B412C800D8A8FE /* PageDefaultErrorView.swift */,
+				53EEAF5124B412C800D8A8FE /* PageDefaultEmptyView.swift */,
+				53EEAF5224B412C800D8A8FE /* PageDefaultServerErrorView.swift */,
+				53EEAF5324B412C800D8A8FE /* PageDefaultLoadingView.swift */,
+			);
+			path = PageDefault;
+			sourceTree = "<group>";
+		};
+		53EEAF5424B412C800D8A8FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				53EEAF5524B412C800D8A8FE /* BaseTabBar.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53EEAF5624B412C800D8A8FE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				53EEAF5724B412C800D8A8FE /* BaseViewController.swift */,
+				53EEAF5824B412C800D8A8FE /* BaseNavigationController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		53EEAF6324B412FB00D8A8FE /* PlaceHolder */ = {
+			isa = PBXGroup;
+			children = (
+				53EEAF6624B412FB00D8A8FE /* ListEmptyPlaceHolderView.swift */,
+			);
+			path = PlaceHolder;
+			sourceTree = "<group>";
+		};
 		53F745852487704C007B6A0F = {
 			isa = PBXGroup;
 			children = (
@@ -961,6 +1016,7 @@
 		53F745C924877411007B6A0F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				53EEAF6324B412FB00D8A8FE /* PlaceHolder */,
 				53F7460C2487793D007B6A0F /* Base */,
 				53F7460B2487793D007B6A0F /* Launch */,
 				53F745CA24877411007B6A0F /* Root */,
@@ -1069,9 +1125,9 @@
 		53F7460C2487793D007B6A0F /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				53F746E024879B68007B6A0F /* BaseNavigationController.swift */,
-				53F746E124879B68007B6A0F /* BaseTabBar.swift */,
-				53F746E224879B69007B6A0F /* BaseViewController.swift */,
+				53EEAF5624B412C800D8A8FE /* Controller */,
+				53EEAF4C24B412C800D8A8FE /* PageDefault */,
+				53EEAF5424B412C800D8A8FE /* View */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -2199,6 +2255,7 @@
 			files = (
 				53F746C724879B22007B6A0F /* NetworkManager.swift in Sources */,
 				53F7472924879CEB007B6A0F /* ThirdHomeController.swift in Sources */,
+				53EEAF5924B412C800D8A8FE /* PageDefaultTobeOpenedView.swift in Sources */,
 				5389D86624AED4EC0017CC2A /* UISFunctionHomeController.swift in Sources */,
 				53F746C024879B22007B6A0F /* LocationManager.swift in Sources */,
 				53F7471624879CB3007B6A0F /* LoginPlaceModel.swift in Sources */,
@@ -2220,7 +2277,6 @@
 				53F746C624879B22007B6A0F /* RequestResult.swift in Sources */,
 				53F7471224879CB3007B6A0F /* CommonUserModel.swift in Sources */,
 				53F745F924877411007B6A0F /* ResourcePlaceAudio.swift in Sources */,
-				53F746E424879B69007B6A0F /* BaseTabBar.swift in Sources */,
 				53F746CB24879B22007B6A0F /* RequestInfo.swift in Sources */,
 				53F7471524879CB3007B6A0F /* LoginViewController.swift in Sources */,
 				53F7473924879D2C007B6A0F /* TestPlaceView.swift in Sources */,
@@ -2235,6 +2291,7 @@
 				53F7468124879B19007B6A0F /* UITextField+LocalExtension.swift in Sources */,
 				53F7467F24879B19007B6A0F /* String+URL.swift in Sources */,
 				5389D86424AED4DF0017CC2A /* UISCommonHomeController.swift in Sources */,
+				53EEAF6024B412C800D8A8FE /* BaseTabBar.swift in Sources */,
 				53F746CE24879B22007B6A0F /* VerionUpdateController.swift in Sources */,
 				53B2DDE12488C7C000F10263 /* SampleManageHomeController.swift in Sources */,
 				53F7471724879CB3007B6A0F /* LoginPlaceView.swift in Sources */,
@@ -2254,16 +2311,19 @@
 				53F7471824879CB3007B6A0F /* LeftMenuHomeController.swift in Sources */,
 				53F7468324879B19007B6A0F /* UIImage+Extension.swift in Sources */,
 				53F7462324879957007B6A0F /* AppConfig.swift in Sources */,
-				53F746E324879B69007B6A0F /* BaseNavigationController.swift in Sources */,
+				53EEAF6224B412C800D8A8FE /* BaseNavigationController.swift in Sources */,
 				53B2DDC62488992500F10263 /* XDPProgressPlaceView.swift in Sources */,
 				53F7461E24879957007B6A0F /* AppThemeConfig.swift in Sources */,
 				53F745E824877411007B6A0F /* AppDelegate.swift in Sources */,
+				53EEAF5C24B412C800D8A8FE /* PageDefaultErrorView.swift in Sources */,
 				53B2DDD6248899D600F10263 /* XDPProjectTodoPlaceModel.swift in Sources */,
 				53B2DDEB2488CAE500F10263 /* RxSwiftSampleMainController.swift in Sources */,
 				53F747832487AED0007B6A0F /* XDBRecommendHomeController.swift in Sources */,
 				53F7464324879AB9007B6A0F /* AppUtil.swift in Sources */,
 				53F745E924877411007B6A0F /* SceneDelegate.swift in Sources */,
 				53F7467424879B19007B6A0F /* AccountDBManager.swift in Sources */,
+				53EEAF5D24B412C800D8A8FE /* PageDefaultEmptyView.swift in Sources */,
+				53EEAF5B24B412C800D8A8FE /* PageDefaultNetErrorView.swift in Sources */,
 				53F7467E24879B19007B6A0F /* String+QRCode.swift in Sources */,
 				53F746D024879B22007B6A0F /* VersionManager.swift in Sources */,
 				53F746CC24879B22007B6A0F /* XDNestScrollContainerView.swift in Sources */,
@@ -2274,7 +2334,6 @@
 				53F746C924879B22007B6A0F /* UrlManager.swift in Sources */,
 				53F7462224879957007B6A0F /* ShieldConfig.swift in Sources */,
 				53F746D224879B22007B6A0F /* AreaSelectDemoController.swift in Sources */,
-				53F746E524879B69007B6A0F /* BaseViewController.swift in Sources */,
 				53F7467024879B19007B6A0F /* CurrentUserObject.swift in Sources */,
 				53F7471924879CB3007B6A0F /* LeftMenuPlaceModel.swift in Sources */,
 				53F7472D24879CEB007B6A0F /* SecondHomeController.swift in Sources */,
@@ -2302,6 +2361,7 @@
 				53F7467324879B19007B6A0F /* AccountTokenObject.swift in Sources */,
 				53B2DDCD2488997700F10263 /* XDPProjectTeamController.swift in Sources */,
 				53F747532487AB0B007B6A0F /* XDBrowserMainController.swift in Sources */,
+				53EEAF6E24B412FB00D8A8FE /* ListEmptyPlaceHolderView.swift in Sources */,
 				53F746C324879B22007B6A0F /* AccountRequestInfo.swift in Sources */,
 				53F7474824879EF8007B6A0F /* AppManageHomeController.swift in Sources */,
 				53B2DD94248896A400F10263 /* XDPTodoPlaceModel.swift in Sources */,
@@ -2311,6 +2371,7 @@
 				53B2DDCB2488996300F10263 /* XDPProjectProgressController.swift in Sources */,
 				53B2DDC92488992500F10263 /* XDPTeamPlaceView.swift in Sources */,
 				53F7467924879B19007B6A0F /* AccountManager.swift in Sources */,
+				53EEAF5A24B412C800D8A8FE /* PageDefaultNothingView.swift in Sources */,
 				53F7463F24879A9D007B6A0F /* AppConstant.swift in Sources */,
 				53F7467124879B19007B6A0F /* AccountObject.swift in Sources */,
 				53F7474724879EF8007B6A0F /* AppManager.swift in Sources */,
@@ -2325,9 +2386,11 @@
 				53F7467B24879B19007B6A0F /* Kingfisher+Extension.swift in Sources */,
 				53F7462524879957007B6A0F /* BundleInfoModel.swift in Sources */,
 				53F7467724879B19007B6A0F /* AccountModel.swift in Sources */,
+				53EEAF5F24B412C800D8A8FE /* PageDefaultLoadingView.swift in Sources */,
 				53F745EB24877411007B6A0F /* ResourcePlacePicture.swift in Sources */,
 				53F7468024879B19007B6A0F /* String+PinYin.swift in Sources */,
 				53F7471424879CB3007B6A0F /* UserPlaceView.swift in Sources */,
+				53EEAF5E24B412C800D8A8FE /* PageDefaultServerErrorView.swift in Sources */,
 				53B2DDAA2488977100F10263 /* XDProjectManageMainController.swift in Sources */,
 				53F7471C24879CB3007B6A0F /* RightMenuPlaceModel.swift in Sources */,
 				53F7463C24879A9D007B6A0F /* AppImage.swift in Sources */,
@@ -2337,6 +2400,7 @@
 				53F746EE24879C5F007B6A0F /* LaunchController.swift in Sources */,
 				53F747812487AEB6007B6A0F /* XDBMenuHomeController.swift in Sources */,
 				53F746EA24879C0C007B6A0F /* RootManager.swift in Sources */,
+				53EEAF6124B412C800D8A8FE /* BaseViewController.swift in Sources */,
 				53F746C424879B22007B6A0F /* AccountNetworkManager.swift in Sources */,
 				53F7471024879CB3007B6A0F /* CurrentUserModel.swift in Sources */,
 				53F7470F24879CB3007B6A0F /* UserPlaceController.swift in Sources */,

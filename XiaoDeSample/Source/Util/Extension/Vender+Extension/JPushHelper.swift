@@ -3,7 +3,7 @@
 ////  iMeet
 ////
 ////  Created by 小唐 on 2019/4/10.
-////  Copyright © 2019 ChainOne. All rights reserved.
+////  Copyright © 2019 XiaoDeStudio. All rights reserved.
 ////
 ////  JPush 工具助手，用于JPush对别名、标签的封装处理
 ////  1. typedef void (^JPUSHAliasOperationCompletion)(NSInteger iResCode, NSString *iAlias, NSInteger seq);

@@ -3,7 +3,7 @@
 ////  iMeet
 ////
 ////  Created by 小唐 on 2019/8/1.
-////  Copyright © 2019 ChainOne. All rights reserved.
+////  Copyright © 2019 XiaoDeStudio. All rights reserved.
 ////
 ////  TZImagePickerController助手
 //
