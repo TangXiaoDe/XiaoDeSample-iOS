@@ -24,7 +24,7 @@ pod 'SwiftLint'                 # SwiftLint 代码规范
 #pod 'ChainOneKit-Swift', :git => 'https://github.com/CommunityChain/ChainOneKit-Swift.git', :tag => '0.0.9.1'
 
 # 个人公开组件库
-pod 'XiaoDeKit-Swift', :git => 'https://github.com/TangXiaoDe/XiaoDeKit-Swift.git', :tag => '0.0.11'
+pod 'XiaoDeKit-Swift', :git => 'https://github.com/TangXiaoDe/XiaoDeKit-Swift.git', :tag => '0.0.11.1'
 
 # Objective-C
 pod 'YYKit', '1.0.9'                      # iOS 组件
