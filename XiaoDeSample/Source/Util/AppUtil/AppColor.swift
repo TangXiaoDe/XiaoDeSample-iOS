@@ -3,7 +3,7 @@
 //  XiaoDeSample
 //
 //  Created by 小唐 on 2020/5/25.
-//  Copyright © 2020 XiaoDe. All rights reserved.
+//  Copyright © 2020 XiaoDeStudio. All rights reserved.
 //
 //  项目颜色集合，来自App主题，即AppConfig.share.theme，已主动处理主题分类。
 

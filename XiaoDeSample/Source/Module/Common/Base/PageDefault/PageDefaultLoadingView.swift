@@ -1,6 +1,6 @@
 //
 //  PageDefaultLoadingView.swift
-//  HuoTuiVideo
+//  XiaoDeSample
 //
 //  Created by 小唐 on 2020/6/30.
 //  Copyright © 2020 XiaoDeStudio. All rights reserved.

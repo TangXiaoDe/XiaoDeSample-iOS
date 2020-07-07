@@ -1,6 +1,6 @@
 //
 //  UIView+SnapKit+Extension.swift
-//  iMeet
+//  XiaoDeSample
 //
 //  Created by 小唐 on 2019/6/15.
 //  Copyright © 2019 XiaoDeStudio. All rights reserved.

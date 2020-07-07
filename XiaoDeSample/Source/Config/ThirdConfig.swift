@@ -1,9 +1,9 @@
 //
 //  ThirdConfig.swift
-//  ProjectTemplate-Swift
+//  XiaoDeSample
 //
 //  Created by 小唐 on 2018/11/29.
-//  Copyright © 2018 TangXiaoDe. All rights reserved.
+//  Copyright © 2018 XiaoDeStudio. All rights reserved.
 //
 //  三方配置
 //  三方配置应可通过json加载、文件加载；
@@ -56,7 +56,7 @@ struct ThirdConfig: Mappable {
         if let bundlePath = Bundle.main.path(forAuxiliaryExecutable: file), let dicData = NSDictionary(contentsOfFile: bundlePath) as? Dictionary<String, Any> {
             self.loadData(json: dicData)
         } else {
-            fatalError("默认环境配置文件格式错误,查看文档 ./ProjectTemplate-Swift/Resource/Document/应用配置说明.md")
+            fatalError("默认环境配置文件格式错误,查看文档 ./XiaoDeSample/Resource/Document/应用配置说明.md")
         }
     }
     /// 通过json加载

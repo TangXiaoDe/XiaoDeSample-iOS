@@ -3,7 +3,7 @@
 //  XiaoDeSample
 //
 //  Created by 小唐 on 2020/5/25.
-//  Copyright © 2020 XiaoDe. All rights reserved.
+//  Copyright © 2020 XiaoDeStudio. All rights reserved.
 //
 //  启动页 -
 //  1. 加载 LaunchScreen.storyboard 作为启动展示界面；

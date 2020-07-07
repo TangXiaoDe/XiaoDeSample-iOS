@@ -3,7 +3,7 @@
 //  XiaoDeSample
 //
 //  Created by 小唐 on 2020/6/2.
-//  Copyright © 2020 XiaoDe. All rights reserved.
+//  Copyright © 2020 XiaoDeStudio. All rights reserved.
 //
 //  主TabBar控制器的扩展文件
 //  当TabBar中的非TabBar本身业务较多时应将其迁移到此，如通知、同步、请求等

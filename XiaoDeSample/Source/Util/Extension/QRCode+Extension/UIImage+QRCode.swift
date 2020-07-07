@@ -1,9 +1,9 @@
 //
 //  UIImage+QRCode.swift
-//  QRCode
+//  XiaoDeSample
 //
 //  Created by gaofu on 16/9/9.
-//  Copyright © 2016年 gaofu. All rights reserved.
+//  Copyright © 2016年 XiaoDeStudio. All rights reserved.
 //
 
 import UIKit

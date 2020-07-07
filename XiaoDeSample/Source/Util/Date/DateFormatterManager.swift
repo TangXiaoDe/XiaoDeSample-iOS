@@ -1,6 +1,6 @@
 //
 //  DateFormatterManager.swift
-//  iMeet
+//  XiaoDeSample
 //
 //  Created by 小唐 on 2019/7/22.
 //  Copyright © 2019 XiaoDeStudio. All rights reserved.

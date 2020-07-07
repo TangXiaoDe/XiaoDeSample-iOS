@@ -9,7 +9,6 @@
 
 import UIKit
 import WebKit
-//import ChainOneKit
 import XiaoDeKit
 
 enum XDBrowserWebSource {

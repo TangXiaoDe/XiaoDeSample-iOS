@@ -1,6 +1,6 @@
 //
 //  XDGIFImageView.swift
-//  iMeet
+//  XiaoDeSample
 //
 //  Created by 小唐 on 2019/7/20.
 //  Copyright © 2019 XiaoDeStudio. All rights reserved.

@@ -3,7 +3,7 @@
 //  XiaoDeSample
 //
 //  Created by 小唐 on 2020/5/25.
-//  Copyright © 2020 XiaoDe. All rights reserved.
+//  Copyright © 2020 XiaoDeStudio. All rights reserved.
 //
 //  根控管理器 - 所有的根控切换都应在这里处理
 

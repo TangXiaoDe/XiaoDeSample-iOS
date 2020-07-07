@@ -1,9 +1,9 @@
 //
 //  String+QRCode.swift
-//  QRCode
+//  XiaoDeSample
 //
 //  Created by gaofu on 16/9/12.
-//  Copyright © 2016年 gaofu. All rights reserved.
+//  Copyright © 2016年 XiaoDeStudio. All rights reserved.
 //
 
 /*

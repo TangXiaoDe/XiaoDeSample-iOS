@@ -1,6 +1,6 @@
 //
 //  VersionManager.swift
-//  iMeet
+//  XiaoDeSample
 //
 //  Created by 小唐 on 2019/1/23.
 //  Copyright © 2019 XiaoDeStudio. All rights reserved.

@@ -1,9 +1,9 @@
 //
 //  XDTransformType.swift
-//  ProjectTemplate-Swift
+//  XiaoDeSample
 //
 //  Created by 小唐 on 2019/1/10.
-//  Copyright © 2019 TangXiaoDe. All rights reserved.
+//  Copyright © 2019 XiaoDeStudio. All rights reserved.
 //
 //  ObjectMapper的扩展库
 

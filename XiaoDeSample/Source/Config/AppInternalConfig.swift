@@ -1,9 +1,9 @@
 //
 //  AppInternalConfig.swift
-//  ProjectTemplate-Swift
+//  XiaoDeSample
 //
 //  Created by 小唐 on 2018/11/29.
-//  Copyright © 2018 TangXiaoDe. All rights reserved.
+//  Copyright © 2018 XiaoDeStudio. All rights reserved.
 //
 //  App内部配置
 

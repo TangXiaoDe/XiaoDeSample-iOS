@@ -1,15 +1,15 @@
 //
 //  XDNestScrollContainerView.swift
-//  ProjectTemplate-Swift
+//  XiaoDeSample
 //
 //  Created by 小唐 on 2019/3/4.
-//  Copyright © 2019 TangXiaoDe. All rights reserved.
+//  Copyright © 2019 XiaoDeStudio. All rights reserved.
 //
 //  嵌套滚动的容器
 //  [注1] 容器内布局 必须使用容器container;
 //  [注2] 容器内滚动视图必须添加到容container内的允许视图属性数组中；
 //  [注3] 容器内滚动视图必须处理
-//  TODO: - 使用原生约束方式出现异常，导致不能正常显示，待解决。具体可参考ChainOneKit库
+//  TODO: - 使用原生约束方式出现异常，导致不能正常显示，待解决。具体可参考XiaoDeKit库
 
 import UIKit
 

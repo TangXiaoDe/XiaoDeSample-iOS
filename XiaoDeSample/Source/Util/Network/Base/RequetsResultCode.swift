@@ -1,6 +1,6 @@
 //
 //  RequestResultCode.swift
-//  iMeet
+//  XiaoDeSample
 //
 //  Created by 小唐 on 2019/3/1.
 //  Copyright © 2019 XiaoDeStudio. All rights reserved.

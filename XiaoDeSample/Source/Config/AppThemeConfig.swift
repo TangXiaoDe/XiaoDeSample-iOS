@@ -1,6 +1,6 @@
 //
 //  AppThemeConfig.swift
-//  
+//  XiaoDeSample
 //
 //  Created by 小唐 on 2019/5/30.
 //  Copyright © 2019 XiaoDeSample. All rights reserved.
@@ -10,7 +10,6 @@
 
 import Foundation
 import UIKit
-//import ChainOneKit
 
 /// App主题分类
 enum AppThemeType

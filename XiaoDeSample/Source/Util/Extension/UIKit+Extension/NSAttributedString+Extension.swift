@@ -1,6 +1,6 @@
 //
 //  NSAttributedString+Extension.swift
-//  iMeet
+//  XiaoDeSample
 //
 //  Created by 小唐 on 2019/8/14.
 //  Copyright © 2019 XiaoDeStudio. All rights reserved.

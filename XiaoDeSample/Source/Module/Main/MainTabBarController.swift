@@ -3,7 +3,7 @@
 //  XiaoDeSample
 //
 //  Created by 小唐 on 2020/6/2.
-//  Copyright © 2020 XiaoDe. All rights reserved.
+//  Copyright © 2020 XiaoDeStudio. All rights reserved.
 //
 //  主界面
 

@@ -1,9 +1,9 @@
 ////
 ////  LocationManager.swift
-////  TokenBook
+////  XiaoDeSample
 ////
 ////  Created by 小唐 on 2018/10/15.
-////  Copyright © 2018 ZhiYiCX. All rights reserved.
+////  Copyright © 2018 XiaoDeStudio. All rights reserved.
 ////
 ////  定位管理
 ////  暂时只做高德定位的基本封装，之后可考虑进一步封装，也可考虑对百度地图的集成进行封装

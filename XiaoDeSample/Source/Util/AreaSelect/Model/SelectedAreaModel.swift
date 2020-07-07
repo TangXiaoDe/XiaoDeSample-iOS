@@ -1,9 +1,9 @@
 //
 //  SelectedAreaModel.swift
-//  ProjectTemplate-Swift
+//  XiaoDeSample
 //
 //  Created by 小唐 on 2019/1/15.
-//  Copyright © 2019 TangXiaoDe. All rights reserved.
+//  Copyright © 2019 XiaoDeStudio. All rights reserved.
 //
 //  地区模型
 

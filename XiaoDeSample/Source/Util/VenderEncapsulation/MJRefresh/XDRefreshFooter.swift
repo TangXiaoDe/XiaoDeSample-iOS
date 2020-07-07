@@ -1,9 +1,9 @@
 //
 //  XDRefreshFooter.swift
-//  Thinksns Plus
+//  XiaoDeSample
 //
-//  Created by GorCat on 17/3/20.
-//  Copyright © 2017年 ZhiYiCX. All rights reserved.
+//  Created by 小唐 on 17/3/20.
+//  Copyright © 2017年 XiaoDeStudo. All rights reserved.
 //
 //  上拉加载更多 footer
 
