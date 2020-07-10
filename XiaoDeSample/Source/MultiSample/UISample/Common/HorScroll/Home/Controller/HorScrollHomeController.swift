@@ -46,7 +46,7 @@ extension HorScrollHomeController {
     fileprivate func initialUI() -> Void {
         self.view.backgroundColor = UIColor.white
         // 1. navigationbar
-        self.navigationItem.title = "HorScroll"
+        self.navigationItem.title = "HorScrollSample"
         // 2. tableView
         self.view.addSubview(tableView)
         tableView.dataSource = self

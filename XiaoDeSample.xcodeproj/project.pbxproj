@@ -23,6 +23,16 @@
 		53A384BC24B815EE00442C4E /* HorScrollMyTaskTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A384BB24B815EE00442C4E /* HorScrollMyTaskTitleView.swift */; };
 		53A384BE24B821F400442C4E /* HorScroll2NavTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A384BD24B821F400442C4E /* HorScroll2NavTitleView.swift */; };
 		53A384C024B83F0A00442C4E /* HorScroll3TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A384BF24B83F0A00442C4E /* HorScroll3TitleView.swift */; };
+		53A384CE24B84F6900442C4E /* PaySampleHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A384CD24B84F6900442C4E /* PaySampleHomeController.swift */; };
+		53A384D024B84F8100442C4E /* PaySampleHomePlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A384CF24B84F8100442C4E /* PaySampleHomePlaceModel.swift */; };
+		53A384D224B84F9F00442C4E /* PaySampleHomePlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A384D124B84F9F00442C4E /* PaySampleHomePlaceView.swift */; };
+		53A384D424B84FB100442C4E /* PaySamplePlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A384D324B84FB100442C4E /* PaySamplePlaceView.swift */; };
+		53A384D624B84FBE00442C4E /* PaySamplePlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A384D524B84FBE00442C4E /* PaySamplePlaceModel.swift */; };
+		53A384DA24B8515F00442C4E /* PayExperienceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A384D924B8515F00442C4E /* PayExperienceController.swift */; };
+		53A384DC24B8516C00442C4E /* PayResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A384DB24B8516C00442C4E /* PayResultController.swift */; };
+		53A384DE24B8517900442C4E /* PayAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A384DD24B8517900442C4E /* PayAnimationController.swift */; };
+		53A384E024B8518700442C4E /* PayPwdInputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A384DF24B8518700442C4E /* PayPwdInputController.swift */; };
+		53A384E224B851C600442C4E /* PayPwdInputViewShowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A384E124B851C600442C4E /* PayPwdInputViewShowController.swift */; };
 		53B2DD922488969200F10263 /* XDPTodoHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DD912488969200F10263 /* XDPTodoHomeController.swift */; };
 		53B2DD94248896A400F10263 /* XDPTodoPlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DD93248896A400F10263 /* XDPTodoPlaceModel.swift */; };
 		53B2DD96248896CF00F10263 /* XDPTodoPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DD95248896CF00F10263 /* XDPTodoPlaceView.swift */; };
@@ -268,6 +278,16 @@
 		53A384BB24B815EE00442C4E /* HorScrollMyTaskTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorScrollMyTaskTitleView.swift; sourceTree = "<group>"; };
 		53A384BD24B821F400442C4E /* HorScroll2NavTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorScroll2NavTitleView.swift; sourceTree = "<group>"; };
 		53A384BF24B83F0A00442C4E /* HorScroll3TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorScroll3TitleView.swift; sourceTree = "<group>"; };
+		53A384CD24B84F6900442C4E /* PaySampleHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaySampleHomeController.swift; sourceTree = "<group>"; };
+		53A384CF24B84F8100442C4E /* PaySampleHomePlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaySampleHomePlaceModel.swift; sourceTree = "<group>"; };
+		53A384D124B84F9F00442C4E /* PaySampleHomePlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaySampleHomePlaceView.swift; sourceTree = "<group>"; };
+		53A384D324B84FB100442C4E /* PaySamplePlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaySamplePlaceView.swift; sourceTree = "<group>"; };
+		53A384D524B84FBE00442C4E /* PaySamplePlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaySamplePlaceModel.swift; sourceTree = "<group>"; };
+		53A384D924B8515F00442C4E /* PayExperienceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayExperienceController.swift; sourceTree = "<group>"; };
+		53A384DB24B8516C00442C4E /* PayResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayResultController.swift; sourceTree = "<group>"; };
+		53A384DD24B8517900442C4E /* PayAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayAnimationController.swift; sourceTree = "<group>"; };
+		53A384DF24B8518700442C4E /* PayPwdInputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPwdInputController.swift; sourceTree = "<group>"; };
+		53A384E124B851C600442C4E /* PayPwdInputViewShowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPwdInputViewShowController.swift; sourceTree = "<group>"; };
 		53B2DD8A2488964300F10263 /* ProjectManageReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ProjectManageReadMe.md; sourceTree = "<group>"; };
 		53B2DD912488969200F10263 /* XDPTodoHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDPTodoHomeController.swift; sourceTree = "<group>"; };
 		53B2DD93248896A400F10263 /* XDPTodoPlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDPTodoPlaceModel.swift; sourceTree = "<group>"; };
@@ -565,6 +585,7 @@
 		5389D85C24AED4460017CC2A /* Function */ = {
 			isa = PBXGroup;
 			children = (
+				53A384C124B84F0800442C4E /* Pay */,
 				5389D85D24AED4460017CC2A /* Home */,
 			);
 			path = Function;
@@ -593,6 +614,87 @@
 				5389D86324AED4DF0017CC2A /* UISCommonHomeController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		53A384C124B84F0800442C4E /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+				53A384C924B84F4E00442C4E /* Home */,
+				53A384C524B84F4E00442C4E /* Sample */,
+			);
+			path = Pay;
+			sourceTree = "<group>";
+		};
+		53A384C524B84F4E00442C4E /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				53A384C624B84F4E00442C4E /* Controller */,
+				53A384C724B84F4E00442C4E /* Model */,
+				53A384C824B84F4E00442C4E /* View */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		53A384C624B84F4E00442C4E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				53A384E124B851C600442C4E /* PayPwdInputViewShowController.swift */,
+				53A384DF24B8518700442C4E /* PayPwdInputController.swift */,
+				53A384DD24B8517900442C4E /* PayAnimationController.swift */,
+				53A384DB24B8516C00442C4E /* PayResultController.swift */,
+				53A384D924B8515F00442C4E /* PayExperienceController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		53A384C724B84F4E00442C4E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				53A384D524B84FBE00442C4E /* PaySamplePlaceModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		53A384C824B84F4E00442C4E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				53A384D324B84FB100442C4E /* PaySamplePlaceView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53A384C924B84F4E00442C4E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				53A384CA24B84F4E00442C4E /* Controller */,
+				53A384CB24B84F4E00442C4E /* Model */,
+				53A384CC24B84F4E00442C4E /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		53A384CA24B84F4E00442C4E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				53A384CD24B84F6900442C4E /* PaySampleHomeController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		53A384CB24B84F4E00442C4E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				53A384CF24B84F8100442C4E /* PaySampleHomePlaceModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		53A384CC24B84F4E00442C4E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				53A384D124B84F9F00442C4E /* PaySampleHomePlaceView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		53B2DD742488962E00F10263 /* XDProjectManage */ = {
@@ -2459,6 +2561,7 @@
 				53F7473724879D2C007B6A0F /* TestHomeController.swift in Sources */,
 				53F7462724879957007B6A0F /* ThirdChildConfig.swift in Sources */,
 				53F7471324879CB3007B6A0F /* UserSupplement.swift in Sources */,
+				53A384DE24B8517900442C4E /* PayAnimationController.swift in Sources */,
 				53F7468624879B19007B6A0F /* DateFormatterManager.swift in Sources */,
 				53F746D824879B22007B6A0F /* XDGIFImage.swift in Sources */,
 				53F7467D24879B19007B6A0F /* UIImage+QRCode.swift in Sources */,
@@ -2470,6 +2573,7 @@
 				53F7464024879A9D007B6A0F /* AppColor.swift in Sources */,
 				53F746D524879B22007B6A0F /* SelectedAreaModel.swift in Sources */,
 				53D9263824B55DA200971F97 /* DoubleIconControl.swift in Sources */,
+				53A384E224B851C600442C4E /* PayPwdInputViewShowController.swift in Sources */,
 				53F7464124879A9D007B6A0F /* AppFont.swift in Sources */,
 				53F746D424879B22007B6A0F /* AreaItemModel.swift in Sources */,
 				53F7472A24879CEB007B6A0F /* FirstHomeController.swift in Sources */,
@@ -2496,6 +2600,7 @@
 				53EEAF6024B412C800D8A8FE /* BaseTabBar.swift in Sources */,
 				53F746CE24879B22007B6A0F /* VerionUpdateController.swift in Sources */,
 				53B2DDE12488C7C000F10263 /* SampleManageHomeController.swift in Sources */,
+				53A384DA24B8515F00442C4E /* PayExperienceController.swift in Sources */,
 				53A384B624B814EB00442C4E /* HorScrollMyOrderController.swift in Sources */,
 				53F7471724879CB3007B6A0F /* LoginPlaceView.swift in Sources */,
 				53D9266724B5BB2600971F97 /* HorScroll1PlaceModel.swift in Sources */,
@@ -2514,6 +2619,8 @@
 				53A384C024B83F0A00442C4E /* HorScroll3TitleView.swift in Sources */,
 				53B2DD922488969200F10263 /* XDPTodoHomeController.swift in Sources */,
 				53A1E22724B727B200674B00 /* HorScroll5NavTitleView.swift in Sources */,
+				53A384D024B84F8100442C4E /* PaySampleHomePlaceModel.swift in Sources */,
+				53A384D224B84F9F00442C4E /* PaySampleHomePlaceView.swift in Sources */,
 				53F7467624879B19007B6A0F /* AccountLoginModel.swift in Sources */,
 				5389D86224AED4D00017CC2A /* UISAnimationHomeController.swift in Sources */,
 				53F746D724879B22007B6A0F /* XDGifImageView.swift in Sources */,
@@ -2560,6 +2667,7 @@
 				53B2DDA82488975600F10263 /* XDPMinePlaceView.swift in Sources */,
 				53F746CF24879B22007B6A0F /* ServerVersionModel.swift in Sources */,
 				53F746D924879B22007B6A0F /* XDWebViwSourceType.swift in Sources */,
+				53A384D624B84FBE00442C4E /* PaySamplePlaceModel.swift in Sources */,
 				53F7462424879957007B6A0F /* ServerConfigModel.swift in Sources */,
 				53A384BA24B815DE00442C4E /* HorScrollMyOrderTitleView.swift in Sources */,
 				53F7472824879CEB007B6A0F /* TabbarItemModel.swift in Sources */,
@@ -2593,6 +2701,7 @@
 				53B2DDB3248898F900F10263 /* XDPProjectHomeController.swift in Sources */,
 				53F746DD24879B22007B6A0F /* XDRefreshHeader.swift in Sources */,
 				53F7472724879CEB007B6A0F /* MainTabBarController+Extension.swift in Sources */,
+				53A384E024B8518700442C4E /* PayPwdInputController.swift in Sources */,
 				53B2DDCB2488996300F10263 /* XDPProjectProgressController.swift in Sources */,
 				53B2DDC92488992500F10263 /* XDPTeamPlaceView.swift in Sources */,
 				53F7467924879B19007B6A0F /* AccountManager.swift in Sources */,
@@ -2612,6 +2721,7 @@
 				53A1E22324B7160600674B00 /* HorScroll6Controller.swift in Sources */,
 				53F7467B24879B19007B6A0F /* Kingfisher+Extension.swift in Sources */,
 				53F7462524879957007B6A0F /* BundleInfoModel.swift in Sources */,
+				53A384D424B84FB100442C4E /* PaySamplePlaceView.swift in Sources */,
 				53F7467724879B19007B6A0F /* AccountModel.swift in Sources */,
 				53EEAF5F24B412C800D8A8FE /* PageDefaultLoadingView.swift in Sources */,
 				53D9266324B5BAD400971F97 /* HorScrollHomePlaceView.swift in Sources */,
@@ -2622,6 +2732,7 @@
 				53B2DDAA2488977100F10263 /* XDProjectManageMainController.swift in Sources */,
 				53F7471C24879CB3007B6A0F /* RightMenuPlaceModel.swift in Sources */,
 				53F7463C24879A9D007B6A0F /* AppImage.swift in Sources */,
+				53A384CE24B84F6900442C4E /* PaySampleHomeController.swift in Sources */,
 				53F7468424879B19007B6A0F /* UIView+Corner.swift in Sources */,
 				53D9267724B5C04600971F97 /* HorScrollListController.swift in Sources */,
 				53D9267924B5C48F00971F97 /* HorScroll4Controller.swift in Sources */,
@@ -2631,6 +2742,7 @@
 				53F746EE24879C5F007B6A0F /* LaunchController.swift in Sources */,
 				53F747812487AEB6007B6A0F /* XDBMenuHomeController.swift in Sources */,
 				53F746EA24879C0C007B6A0F /* RootManager.swift in Sources */,
+				53A384DC24B8516C00442C4E /* PayResultController.swift in Sources */,
 				53EEAF6124B412C800D8A8FE /* BaseViewController.swift in Sources */,
 				53F746C424879B22007B6A0F /* AccountNetworkManager.swift in Sources */,
 				53F7471024879CB3007B6A0F /* CurrentUserModel.swift in Sources */,
