@@ -61,8 +61,8 @@ extension AppDelegate {
 //        self.setupCrash()
 //        /// 极光推送配置
 //        self.setupJPush(didFinishLaunchingWithOptions: launchOptions)
-//        // 应用UI配置
-//        self.setupAppUI()
+        // 应用UI配置
+        self.setupAppUI()
         // 根控
         self.setupRootVC()
 //        // 远程通知启动
@@ -72,7 +72,6 @@ extension AppDelegate {
 //        /// 地图配置
 //        self.setupMap()
     }
-
     
     /// 根控加载
     fileprivate func setupRootVC() -> Void {
@@ -82,6 +81,30 @@ extension AppDelegate {
         window.makeKeyAndVisible()
         self.window = window
     }
+    
+    /// 应用UI配置
+    fileprivate func setupAppUI() -> Void {
+        // navigationBar配置 - 同步(必须同步而不是异步，否则默认展示的导航控制器会显示异常)
+        let titleFont: UIFont = UIFont.pingFangSCFont(size: 18, weight: .medium)
+        UINavigationController.setNavBarTheme(titleFont: titleFont, titleColor: UIColor.white, tintColor: UIColor.white, barTintColor: UIColor.init(hex: 0x2D385C), isTranslucent: false, bgImage: UIImage(), shadowColor: UIColor.init(hex: 0x202A46))
+
+        /// 该类初始化之后，配置整个应用: 主题色等 - 异步
+        DispatchQueue.main.async {
+            // input
+            //UITextField.appearance().tintColor = TSColor.main.theme
+            //UITextView.appearance().tintColor = TSColor.main.theme
+            // button
+            UIButton.appearance().isExclusiveTouch = true
+            UIControl.appearance().isExclusiveTouch = true
+            // UITabBarItem
+            UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont.pingFangSCFont(size: 10, weight: .medium), NSAttributedString.Key.foregroundColor: UIColor.init(hex: 0x8C97AC)], for: .normal)
+            UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont.pingFangSCFont(size: 10, weight: .medium), NSAttributedString.Key.foregroundColor: AppColor.theme], for: .selected)
+        }
+        UIApplication.shared.statusBarStyle = .lightContent
+        // 解决Tabbar中pusha再pop时有自定义导航栏的界面tabbar跳动的问题
+        UITabBar.appearance().isTranslucent = false
+    }
+
     
     
 }

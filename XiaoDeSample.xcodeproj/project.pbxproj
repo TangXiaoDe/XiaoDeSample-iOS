@@ -11,6 +11,16 @@
 		5389D86224AED4D00017CC2A /* UISAnimationHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5389D86124AED4D00017CC2A /* UISAnimationHomeController.swift */; };
 		5389D86424AED4DF0017CC2A /* UISCommonHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5389D86324AED4DF0017CC2A /* UISCommonHomeController.swift */; };
 		5389D86624AED4EC0017CC2A /* UISFunctionHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5389D86524AED4EC0017CC2A /* UISFunctionHomeController.swift */; };
+		53A1E22124B708EC00674B00 /* HorScroll4TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A1E22024B708EC00674B00 /* HorScroll4TitleView.swift */; };
+		53A1E22324B7160600674B00 /* HorScroll6Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A1E22224B7160600674B00 /* HorScroll6Controller.swift */; };
+		53A1E22524B7178500674B00 /* HorScroll6TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A1E22424B7178500674B00 /* HorScroll6TitleView.swift */; };
+		53A1E22724B727B200674B00 /* HorScroll5NavTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A1E22624B727B200674B00 /* HorScroll5NavTitleView.swift */; };
+		53A1E22924B727D700674B00 /* HorScroll51TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A1E22824B727D700674B00 /* HorScroll51TitleView.swift */; };
+		53A1E22B24B727E300674B00 /* HorScroll52TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A1E22A24B727E300674B00 /* HorScroll52TitleView.swift */; };
+		53A384B624B814EB00442C4E /* HorScrollMyOrderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A384B524B814EB00442C4E /* HorScrollMyOrderController.swift */; };
+		53A384B824B814FB00442C4E /* HorScrollMyTaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A384B724B814FB00442C4E /* HorScrollMyTaskController.swift */; };
+		53A384BA24B815DE00442C4E /* HorScrollMyOrderTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A384B924B815DE00442C4E /* HorScrollMyOrderTitleView.swift */; };
+		53A384BC24B815EE00442C4E /* HorScrollMyTaskTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A384BB24B815EE00442C4E /* HorScrollMyTaskTitleView.swift */; };
 		53B2DD922488969200F10263 /* XDPTodoHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DD912488969200F10263 /* XDPTodoHomeController.swift */; };
 		53B2DD94248896A400F10263 /* XDPTodoPlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DD93248896A400F10263 /* XDPTodoPlaceModel.swift */; };
 		53B2DD96248896CF00F10263 /* XDPTodoPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DD95248896CF00F10263 /* XDPTodoPlaceView.swift */; };
@@ -48,6 +58,19 @@
 		53D9264824B5638400971F97 /* XDDashLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D9264724B5638400971F97 /* XDDashLineView.swift */; };
 		53D9264A24B563CC00971F97 /* UIScrollView+PrintPageRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D9264924B563CC00971F97 /* UIScrollView+PrintPageRenderer.swift */; };
 		53D9264C24B5728500971F97 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D9264B24B5728500971F97 /* UIViewController+Extension.swift */; };
+		53D9265F24B5BAB300971F97 /* HorScrollHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D9265E24B5BAB300971F97 /* HorScrollHomeController.swift */; };
+		53D9266124B5BAC700971F97 /* HorScrollHomePlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D9266024B5BAC700971F97 /* HorScrollHomePlaceModel.swift */; };
+		53D9266324B5BAD400971F97 /* HorScrollHomePlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D9266224B5BAD400971F97 /* HorScrollHomePlaceView.swift */; };
+		53D9266524B5BB1900971F97 /* HorScroll1Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D9266424B5BB1900971F97 /* HorScroll1Controller.swift */; };
+		53D9266724B5BB2600971F97 /* HorScroll1PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D9266624B5BB2600971F97 /* HorScroll1PlaceModel.swift */; };
+		53D9266B24B5BBAB00971F97 /* HorScroll2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D9266A24B5BBAB00971F97 /* HorScroll2Controller.swift */; };
+		53D9267124B5BD3D00971F97 /* HorScroll3Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D9267024B5BD3D00971F97 /* HorScroll3Controller.swift */; };
+		53D9267724B5C04600971F97 /* HorScrollListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D9267624B5C04600971F97 /* HorScrollListController.swift */; };
+		53D9267924B5C48F00971F97 /* HorScroll4Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D9267824B5C48F00971F97 /* HorScroll4Controller.swift */; };
+		53D9267B24B5C4B600971F97 /* HorScroll5Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D9267A24B5C4B600971F97 /* HorScroll5Controller.swift */; };
+		53D9267D24B5C4C400971F97 /* HorScroll51Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D9267C24B5C4C400971F97 /* HorScroll51Controller.swift */; };
+		53D9267F24B5C4D100971F97 /* HorScroll52Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D9267E24B5C4D100971F97 /* HorScroll52Controller.swift */; };
+		53D9268124B5C51600971F97 /* HorScrollListType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D9268024B5C51600971F97 /* HorScrollListType.swift */; };
 		53EEAF5924B412C800D8A8FE /* PageDefaultTobeOpenedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EEAF4D24B412C800D8A8FE /* PageDefaultTobeOpenedView.swift */; };
 		53EEAF5A24B412C800D8A8FE /* PageDefaultNothingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EEAF4E24B412C800D8A8FE /* PageDefaultNothingView.swift */; };
 		53EEAF5B24B412C800D8A8FE /* PageDefaultNetErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EEAF4F24B412C800D8A8FE /* PageDefaultNetErrorView.swift */; };
@@ -231,6 +254,16 @@
 		5389D86124AED4D00017CC2A /* UISAnimationHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISAnimationHomeController.swift; sourceTree = "<group>"; };
 		5389D86324AED4DF0017CC2A /* UISCommonHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISCommonHomeController.swift; sourceTree = "<group>"; };
 		5389D86524AED4EC0017CC2A /* UISFunctionHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISFunctionHomeController.swift; sourceTree = "<group>"; };
+		53A1E22024B708EC00674B00 /* HorScroll4TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorScroll4TitleView.swift; sourceTree = "<group>"; };
+		53A1E22224B7160600674B00 /* HorScroll6Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorScroll6Controller.swift; sourceTree = "<group>"; };
+		53A1E22424B7178500674B00 /* HorScroll6TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorScroll6TitleView.swift; sourceTree = "<group>"; };
+		53A1E22624B727B200674B00 /* HorScroll5NavTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorScroll5NavTitleView.swift; sourceTree = "<group>"; };
+		53A1E22824B727D700674B00 /* HorScroll51TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorScroll51TitleView.swift; sourceTree = "<group>"; };
+		53A1E22A24B727E300674B00 /* HorScroll52TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorScroll52TitleView.swift; sourceTree = "<group>"; };
+		53A384B524B814EB00442C4E /* HorScrollMyOrderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorScrollMyOrderController.swift; sourceTree = "<group>"; };
+		53A384B724B814FB00442C4E /* HorScrollMyTaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorScrollMyTaskController.swift; sourceTree = "<group>"; };
+		53A384B924B815DE00442C4E /* HorScrollMyOrderTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorScrollMyOrderTitleView.swift; sourceTree = "<group>"; };
+		53A384BB24B815EE00442C4E /* HorScrollMyTaskTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorScrollMyTaskTitleView.swift; sourceTree = "<group>"; };
 		53B2DD8A2488964300F10263 /* ProjectManageReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ProjectManageReadMe.md; sourceTree = "<group>"; };
 		53B2DD912488969200F10263 /* XDPTodoHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDPTodoHomeController.swift; sourceTree = "<group>"; };
 		53B2DD93248896A400F10263 /* XDPTodoPlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDPTodoPlaceModel.swift; sourceTree = "<group>"; };
@@ -270,6 +303,19 @@
 		53D9264724B5638400971F97 /* XDDashLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDDashLineView.swift; sourceTree = "<group>"; };
 		53D9264924B563CC00971F97 /* UIScrollView+PrintPageRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+PrintPageRenderer.swift"; sourceTree = "<group>"; };
 		53D9264B24B5728500971F97 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		53D9265E24B5BAB300971F97 /* HorScrollHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorScrollHomeController.swift; sourceTree = "<group>"; };
+		53D9266024B5BAC700971F97 /* HorScrollHomePlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorScrollHomePlaceModel.swift; sourceTree = "<group>"; };
+		53D9266224B5BAD400971F97 /* HorScrollHomePlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorScrollHomePlaceView.swift; sourceTree = "<group>"; };
+		53D9266424B5BB1900971F97 /* HorScroll1Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorScroll1Controller.swift; sourceTree = "<group>"; };
+		53D9266624B5BB2600971F97 /* HorScroll1PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorScroll1PlaceModel.swift; sourceTree = "<group>"; };
+		53D9266A24B5BBAB00971F97 /* HorScroll2Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorScroll2Controller.swift; sourceTree = "<group>"; };
+		53D9267024B5BD3D00971F97 /* HorScroll3Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorScroll3Controller.swift; sourceTree = "<group>"; };
+		53D9267624B5C04600971F97 /* HorScrollListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorScrollListController.swift; sourceTree = "<group>"; };
+		53D9267824B5C48F00971F97 /* HorScroll4Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorScroll4Controller.swift; sourceTree = "<group>"; };
+		53D9267A24B5C4B600971F97 /* HorScroll5Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorScroll5Controller.swift; sourceTree = "<group>"; };
+		53D9267C24B5C4C400971F97 /* HorScroll51Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorScroll51Controller.swift; sourceTree = "<group>"; };
+		53D9267E24B5C4D100971F97 /* HorScroll52Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorScroll52Controller.swift; sourceTree = "<group>"; };
+		53D9268024B5C51600971F97 /* HorScrollListType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorScrollListType.swift; sourceTree = "<group>"; };
 		53EEAF4D24B412C800D8A8FE /* PageDefaultTobeOpenedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageDefaultTobeOpenedView.swift; sourceTree = "<group>"; };
 		53EEAF4E24B412C800D8A8FE /* PageDefaultNothingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageDefaultNothingView.swift; sourceTree = "<group>"; };
 		53EEAF4F24B412C800D8A8FE /* PageDefaultNetErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageDefaultNetErrorView.swift; sourceTree = "<group>"; };
@@ -532,6 +578,7 @@
 			isa = PBXGroup;
 			children = (
 				5389D85F24AED4460017CC2A /* Home */,
+				53D9264D24B5BA9900971F97 /* HorScroll */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -879,6 +926,100 @@
 				53D9264324B5619600971F97 /* TitleControl.swift */,
 				53D9264524B5619E00971F97 /* IconControl.swift */,
 				53D9264724B5638400971F97 /* XDDashLineView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53D9264D24B5BA9900971F97 /* HorScroll */ = {
+			isa = PBXGroup;
+			children = (
+				53D9264E24B5BA9900971F97 /* Home */,
+				53D9265224B5BA9900971F97 /* Sample */,
+			);
+			path = HorScroll;
+			sourceTree = "<group>";
+		};
+		53D9264E24B5BA9900971F97 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				53D9264F24B5BA9900971F97 /* Controller */,
+				53D9265024B5BA9900971F97 /* Model */,
+				53D9265124B5BA9900971F97 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		53D9264F24B5BA9900971F97 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				53D9265E24B5BAB300971F97 /* HorScrollHomeController.swift */,
+				53D9267624B5C04600971F97 /* HorScrollListController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		53D9265024B5BA9900971F97 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				53D9266024B5BAC700971F97 /* HorScrollHomePlaceModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		53D9265124B5BA9900971F97 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				53D9266224B5BAD400971F97 /* HorScrollHomePlaceView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53D9265224B5BA9900971F97 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				53D9265324B5BA9900971F97 /* Controller */,
+				53D9265424B5BA9900971F97 /* Model */,
+				53D9265524B5BA9900971F97 /* View */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		53D9265324B5BA9900971F97 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				53D9266424B5BB1900971F97 /* HorScroll1Controller.swift */,
+				53D9266A24B5BBAB00971F97 /* HorScroll2Controller.swift */,
+				53D9267024B5BD3D00971F97 /* HorScroll3Controller.swift */,
+				53D9267824B5C48F00971F97 /* HorScroll4Controller.swift */,
+				53D9267A24B5C4B600971F97 /* HorScroll5Controller.swift */,
+				53D9267C24B5C4C400971F97 /* HorScroll51Controller.swift */,
+				53D9267E24B5C4D100971F97 /* HorScroll52Controller.swift */,
+				53A1E22224B7160600674B00 /* HorScroll6Controller.swift */,
+				53A384B524B814EB00442C4E /* HorScrollMyOrderController.swift */,
+				53A384B724B814FB00442C4E /* HorScrollMyTaskController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		53D9265424B5BA9900971F97 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				53D9266624B5BB2600971F97 /* HorScroll1PlaceModel.swift */,
+				53D9268024B5C51600971F97 /* HorScrollListType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		53D9265524B5BA9900971F97 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				53A1E22024B708EC00674B00 /* HorScroll4TitleView.swift */,
+				53A1E22424B7178500674B00 /* HorScroll6TitleView.swift */,
+				53A1E22624B727B200674B00 /* HorScroll5NavTitleView.swift */,
+				53A1E22824B727D700674B00 /* HorScroll51TitleView.swift */,
+				53A1E22A24B727E300674B00 /* HorScroll52TitleView.swift */,
+				53A384B924B815DE00442C4E /* HorScrollMyOrderTitleView.swift */,
+				53A384BB24B815EE00442C4E /* HorScrollMyTaskTitleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2301,11 +2442,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				53F746C724879B22007B6A0F /* NetworkManager.swift in Sources */,
+				53A1E22524B7178500674B00 /* HorScroll6TitleView.swift in Sources */,
 				53F7472924879CEB007B6A0F /* ThirdHomeController.swift in Sources */,
 				53EEAF5924B412C800D8A8FE /* PageDefaultTobeOpenedView.swift in Sources */,
 				5389D86624AED4EC0017CC2A /* UISFunctionHomeController.swift in Sources */,
 				53F746C024879B22007B6A0F /* LocationManager.swift in Sources */,
 				53F7471624879CB3007B6A0F /* LoginPlaceModel.swift in Sources */,
+				53D9267B24B5C4B600971F97 /* HorScroll5Controller.swift in Sources */,
 				53F7473724879D2C007B6A0F /* TestHomeController.swift in Sources */,
 				53F7462724879957007B6A0F /* ThirdChildConfig.swift in Sources */,
 				53F7471324879CB3007B6A0F /* UserSupplement.swift in Sources */,
@@ -2314,6 +2457,7 @@
 				53F7467D24879B19007B6A0F /* UIImage+QRCode.swift in Sources */,
 				53F7467A24879B19007B6A0F /* UIView+SnapKit+Extension.swift in Sources */,
 				53F7473824879D2C007B6A0F /* TestPlaceModel.swift in Sources */,
+				53A1E22924B727D700674B00 /* HorScroll51TitleView.swift in Sources */,
 				53F746DA24879B22007B6A0F /* XDWKWebViewController.swift in Sources */,
 				53F747872487B14F007B6A0F /* XDBBookMarkModel.swift in Sources */,
 				53F7464024879A9D007B6A0F /* AppColor.swift in Sources */,
@@ -2327,6 +2471,7 @@
 				53F745F924877411007B6A0F /* ResourcePlaceAudio.swift in Sources */,
 				53F746CB24879B22007B6A0F /* RequestInfo.swift in Sources */,
 				53F7471524879CB3007B6A0F /* LoginViewController.swift in Sources */,
+				53D9266524B5BB1900971F97 /* HorScroll1Controller.swift in Sources */,
 				53D9264824B5638400971F97 /* XDDashLineView.swift in Sources */,
 				53F7473924879D2C007B6A0F /* TestPlaceView.swift in Sources */,
 				53B2DDE92488CACB00F10263 /* SwiftUISampleMainController.swift in Sources */,
@@ -2344,7 +2489,9 @@
 				53EEAF6024B412C800D8A8FE /* BaseTabBar.swift in Sources */,
 				53F746CE24879B22007B6A0F /* VerionUpdateController.swift in Sources */,
 				53B2DDE12488C7C000F10263 /* SampleManageHomeController.swift in Sources */,
+				53A384B624B814EB00442C4E /* HorScrollMyOrderController.swift in Sources */,
 				53F7471724879CB3007B6A0F /* LoginPlaceView.swift in Sources */,
+				53D9266724B5BB2600971F97 /* HorScroll1PlaceModel.swift in Sources */,
 				53F7462124879957007B6A0F /* ThirdConfig.swift in Sources */,
 				53B2DDD7248899D600F10263 /* XDPProjectTodoPlaceView.swift in Sources */,
 				53F7471124879CB3007B6A0F /* UserTagModel.swift in Sources */,
@@ -2352,11 +2499,13 @@
 				53D9263D24B55DA200971F97 /* DoubleTitleControl.swift in Sources */,
 				53F746EF24879C5F007B6A0F /* LaunchGuideController.swift in Sources */,
 				53D9264A24B563CC00971F97 /* UIScrollView+PrintPageRenderer.swift in Sources */,
+				53A1E22B24B727E300674B00 /* HorScroll52TitleView.swift in Sources */,
 				53F7473624879D2C007B6A0F /* TestViewController.swift in Sources */,
 				53B2DDDF2488C7A600F10263 /* SampleManager.swift in Sources */,
 				53B2DDB4248898F900F10263 /* XDPProjectPlaceModel.swift in Sources */,
 				53F7466F24879B19007B6A0F /* UserTagObject.swift in Sources */,
 				53B2DD922488969200F10263 /* XDPTodoHomeController.swift in Sources */,
+				53A1E22724B727B200674B00 /* HorScroll5NavTitleView.swift in Sources */,
 				53F7467624879B19007B6A0F /* AccountLoginModel.swift in Sources */,
 				5389D86224AED4D00017CC2A /* UISAnimationHomeController.swift in Sources */,
 				53F746D724879B22007B6A0F /* XDGifImageView.swift in Sources */,
@@ -2367,6 +2516,7 @@
 				53EEAF6224B412C800D8A8FE /* BaseNavigationController.swift in Sources */,
 				53D9263A24B55DA200971F97 /* CommonSwitchView.swift in Sources */,
 				53B2DDC62488992500F10263 /* XDPProgressPlaceView.swift in Sources */,
+				53D9266124B5BAC700971F97 /* HorScrollHomePlaceModel.swift in Sources */,
 				53F7461E24879957007B6A0F /* AppThemeConfig.swift in Sources */,
 				53F745E824877411007B6A0F /* AppDelegate.swift in Sources */,
 				53EEAF5C24B412C800D8A8FE /* PageDefaultErrorView.swift in Sources */,
@@ -2403,20 +2553,27 @@
 				53F746CF24879B22007B6A0F /* ServerVersionModel.swift in Sources */,
 				53F746D924879B22007B6A0F /* XDWebViwSourceType.swift in Sources */,
 				53F7462424879957007B6A0F /* ServerConfigModel.swift in Sources */,
+				53A384BA24B815DE00442C4E /* HorScrollMyOrderTitleView.swift in Sources */,
 				53F7472824879CEB007B6A0F /* TabbarItemModel.swift in Sources */,
 				53F746CD24879B22007B6A0F /* XDNestScrollView.swift in Sources */,
+				53A1E22124B708EC00674B00 /* HorScroll4TitleView.swift in Sources */,
 				53F7472B24879CEB007B6A0F /* FifthHomeController.swift in Sources */,
+				53D9267F24B5C4D100971F97 /* HorScroll52Controller.swift in Sources */,
 				5389D85924AECF6D0017CC2A /* UISampleMainController.swift in Sources */,
 				53F7462624879957007B6A0F /* ServerAddressConfig.swift in Sources */,
 				53F7468524879B19007B6A0F /* CacheManager.swift in Sources */,
 				53F7468724879B19007B6A0F /* DateFormatter.swift in Sources */,
+				53D9267124B5BD3D00971F97 /* HorScroll3Controller.swift in Sources */,
 				53F7467C24879B19007B6A0F /* JPushHelper.swift in Sources */,
+				53D9266B24B5BBAB00971F97 /* HorScroll2Controller.swift in Sources */,
 				53F746DF24879B22007B6A0F /* XDTransformType.swift in Sources */,
 				53F7472C24879CEB007B6A0F /* FourthHomeController.swift in Sources */,
 				53F747672487AC39007B6A0F /* XDBBookMarkHomeController.swift in Sources */,
 				53B2DDD5248899D600F10263 /* XDPProjectTodoController.swift in Sources */,
 				53F747892487B362007B6A0F /* XDBBookMarkListCell.swift in Sources */,
 				53F7467324879B19007B6A0F /* AccountTokenObject.swift in Sources */,
+				53D9268124B5C51600971F97 /* HorScrollListType.swift in Sources */,
+				53A384B824B814FB00442C4E /* HorScrollMyTaskController.swift in Sources */,
 				53B2DDCD2488997700F10263 /* XDPProjectTeamController.swift in Sources */,
 				53F747532487AB0B007B6A0F /* XDBrowserMainController.swift in Sources */,
 				53EEAF6E24B412FB00D8A8FE /* ListEmptyPlaceHolderView.swift in Sources */,
@@ -2424,6 +2581,7 @@
 				53D9263C24B55DA200971F97 /* LabelContainer.swift in Sources */,
 				53F7474824879EF8007B6A0F /* AppManageHomeController.swift in Sources */,
 				53B2DD94248896A400F10263 /* XDPTodoPlaceModel.swift in Sources */,
+				53D9267D24B5C4C400971F97 /* HorScroll51Controller.swift in Sources */,
 				53B2DDB3248898F900F10263 /* XDPProjectHomeController.swift in Sources */,
 				53F746DD24879B22007B6A0F /* XDRefreshHeader.swift in Sources */,
 				53F7472724879CEB007B6A0F /* MainTabBarController+Extension.swift in Sources */,
@@ -2441,11 +2599,14 @@
 				53F746C224879B22007B6A0F /* SystemNetworkManager.swift in Sources */,
 				53F7471A24879CB3007B6A0F /* LeftMenuPlaceView.swift in Sources */,
 				53F747852487AEEA007B6A0F /* XDBVideoHomeController.swift in Sources */,
+				53D9265F24B5BAB300971F97 /* HorScrollHomeController.swift in Sources */,
 				53B2DDC52488992500F10263 /* XDPProgressPlaceModel.swift in Sources */,
+				53A1E22324B7160600674B00 /* HorScroll6Controller.swift in Sources */,
 				53F7467B24879B19007B6A0F /* Kingfisher+Extension.swift in Sources */,
 				53F7462524879957007B6A0F /* BundleInfoModel.swift in Sources */,
 				53F7467724879B19007B6A0F /* AccountModel.swift in Sources */,
 				53EEAF5F24B412C800D8A8FE /* PageDefaultLoadingView.swift in Sources */,
+				53D9266324B5BAD400971F97 /* HorScrollHomePlaceView.swift in Sources */,
 				53F745EB24877411007B6A0F /* ResourcePlacePicture.swift in Sources */,
 				53F7468024879B19007B6A0F /* String+PinYin.swift in Sources */,
 				53F7471424879CB3007B6A0F /* UserPlaceView.swift in Sources */,
@@ -2454,6 +2615,8 @@
 				53F7471C24879CB3007B6A0F /* RightMenuPlaceModel.swift in Sources */,
 				53F7463C24879A9D007B6A0F /* AppImage.swift in Sources */,
 				53F7468424879B19007B6A0F /* UIView+Corner.swift in Sources */,
+				53D9267724B5C04600971F97 /* HorScrollListController.swift in Sources */,
+				53D9267924B5C48F00971F97 /* HorScroll4Controller.swift in Sources */,
 				53B2DD96248896CF00F10263 /* XDPTodoPlaceView.swift in Sources */,
 				53D9263E24B55DA200971F97 /* TitleIconControl.swift in Sources */,
 				53F745EA24877411007B6A0F /* ResourcePlaceVideo.swift in Sources */,
@@ -2469,6 +2632,7 @@
 				53B2DDC82488992500F10263 /* XDPTeamPlaceModel.swift in Sources */,
 				53F7461D24879957007B6A0F /* AppInternalConfig.swift in Sources */,
 				53F746C524879B22007B6A0F /* IMeetReachability.swift in Sources */,
+				53A384BC24B815EE00442C4E /* HorScrollMyTaskTitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

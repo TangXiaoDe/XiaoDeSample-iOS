@@ -50,7 +50,6 @@ class BaseViewController: UIViewController
     /// 显示次数
     var appearTime: Int = 0
     
-    
     var contentType: PageContentType = PageContentType.normal {
         didSet {
             self.content_Container.isHidden = contentType == .normal
@@ -76,6 +75,9 @@ class BaseViewController: UIViewController
     var content_emptyView: UIView = PageDefaultEmptyView.init()
     var content_errorView: PageErrorView = PageDefaultErrorView.init()
     var content_customView: UIView = UIView.init()
+    
+    /// 是否选中，默认选中，主要用于多列表时的切换选中处理
+    var isSelected: Bool = true
     
 
     override func viewDidLoad() {

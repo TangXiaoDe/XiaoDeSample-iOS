@@ -1,15 +1,16 @@
 //
-//  UISCommonHomeController.swift
+//  HorScrollHomeController.swift
 //  XiaoDeSample
 //
-//  Created by 小唐 on 2020/7/3.
+//  Created by 小唐 on 2020/7/8.
 //  Copyright © 2020 XiaoDeStudio. All rights reserved.
 //
+//  水平滚动主页
 
 import UIKit
 
-typealias UISampleCommonHomeController = UISCommonHomeController
-class UISCommonHomeController: BaseViewController
+typealias HorScrollSampleHomeController = HorScrollHomeController
+class HorScrollHomeController: BaseViewController
 {
     
     // MARK: - Internal Property
@@ -32,7 +33,7 @@ class UISCommonHomeController: BaseViewController
 // MARK: - Internal Function
 
 // MARK: - LifeCircle Function
-extension UISCommonHomeController {
+extension HorScrollHomeController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initialUI()
@@ -41,11 +42,11 @@ extension UISCommonHomeController {
 }
 
 // MARK: - UI
-extension UISCommonHomeController {
+extension HorScrollHomeController {
     fileprivate func initialUI() -> Void {
         self.view.backgroundColor = UIColor.white
         // 1. navigationbar
-        self.navigationItem.title = "Common"
+        self.navigationItem.title = "HorScroll"
         // 2. tableView
         self.view.addSubview(tableView)
         tableView.dataSource = self
@@ -65,23 +66,38 @@ extension UISCommonHomeController {
 }
 
 // MARK: - Data(数据处理与加载)
-extension UISCommonHomeController {
+extension HorScrollHomeController {
     // MARK: - Private  数据处理与加载
     fileprivate func initialDataSource() -> Void {
-        self.sourceList = ["HorScroll"]
+        self.sourceList = ["HorScroll1", "HorScroll2", "HorScroll3", "HorScroll4", "HorScroll5", "HorScroll6", "HorScroll7"]
         self.tableView.reloadData()
     }
 
 }
 
 // MARK: - Event(事件响应)
-extension UISCommonHomeController {
+extension HorScrollHomeController {
     /// cell选中处理
     fileprivate func cellSelectedWith(model: String) -> Void {
         switch model {
-        case "HorScroll":
-            let horScrollVC = HorScrollHomeController.init()
-            self.enterPageVC(horScrollVC)
+        case "HorScroll1":
+            let nextVC = HorScroll1Controller.init()
+            self.enterPageVC(nextVC)
+        case "HorScroll2":
+            let nextVC = HorScroll2Controller.init()
+            self.enterPageVC(nextVC)
+        case "HorScroll3":
+            let nextVC = HorScroll3Controller.init()
+            self.enterPageVC(nextVC)
+        case "HorScroll4":
+            let nextVC = HorScroll4Controller.init()
+            self.enterPageVC(nextVC)
+        case "HorScroll5":
+            let nextVC = HorScroll5Controller.init()
+            self.enterPageVC(nextVC)
+        case "HorScroll6":
+            let nextVC = HorScroll6Controller.init()
+            self.enterPageVC(nextVC)
         default:
             break
         }
@@ -90,29 +106,29 @@ extension UISCommonHomeController {
 }
 
 // MARK; - Request(网络请求)
-extension UISCommonHomeController {
+extension HorScrollHomeController {
     
 }
 
 // MARK: - Enter Page
-extension UISCommonHomeController {
+extension HorScrollHomeController {
     
 }
 
 // MARK: - Notification
-extension UISCommonHomeController {
+extension HorScrollHomeController {
     
 }
 
 // MARK: - Extension
-extension UISCommonHomeController {
+extension HorScrollHomeController {
     
 }
 
 // MARK: - Delegate Function
 
 // MARK: - <UITableViewDataSource>
-extension UISCommonHomeController: UITableViewDataSource {
+extension HorScrollHomeController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -142,7 +158,7 @@ extension UISCommonHomeController: UITableViewDataSource {
 }
 
 // MARK: - <UITableViewDelegate>
-extension UISCommonHomeController: UITableViewDelegate {
+extension HorScrollHomeController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         //return UITableView.automaticDimension
