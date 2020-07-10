@@ -15,6 +15,12 @@ class PayPwdInputViewShowController: BaseViewController
     
     // MARK: - Private Property
     
+    fileprivate let pwdInputView: PayPasswordInputView = PayPasswordInputView.init(width: kScreenWidth - 24.0)
+    
+    fileprivate let lrMargin: CGFloat = 12
+    
+    
+    
     // MARK: - Initialize Function
     
     init() {
@@ -56,6 +62,17 @@ extension PayPwdInputViewShowController {
         self.view.backgroundColor = UIColor.white
         // navbar
         self.navigationItem.title = "PayPwdInputView"
+        // pwdInputView
+        self.view.addSubview(self.pwdInputView)
+        self.pwdInputView.backgroundColor = UIColor.random
+        self.pwdInputView.secureTextEntry = true
+        self.pwdInputView.snp.makeConstraints { (make) in
+            make.leading.equalToSuperview().offset(self.lrMargin)
+            make.trailing.equalToSuperview().offset(-self.lrMargin)
+            make.bottom.equalToSuperview().offset(-350)
+            make.height.equalTo(44)
+        }
+        
     }
 
 }
