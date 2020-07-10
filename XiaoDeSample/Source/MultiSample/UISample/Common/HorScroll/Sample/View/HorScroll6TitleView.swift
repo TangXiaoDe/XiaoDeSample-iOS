@@ -33,7 +33,6 @@ class HorScroll6TitleView: UIView
     
     var defaultSelectedIndex: Int = 0 {
         didSet {
-            //self.didSetupSelectedIndex(defaultSelectedIndex, animation: false)
             self.selectedIndex = defaultSelectedIndex
         }
     }
@@ -47,20 +46,25 @@ class HorScroll6TitleView: UIView
     }
     fileprivate var isFirstSetSelectedIndex: Bool = true
     
+    var showSlider: Bool = true {
+        didSet {
+            self.slider.isHidden = !showSlider
+        }
+    }
 
     // MARK: - Private Property
     fileprivate let mainView: UIView = UIView()
     fileprivate let scrollView: UIScrollView = UIScrollView.init()
     fileprivate let slider: UIView = UIView()
-    fileprivate let titleBtnTagBase: Int = 250
+    fileprivate let itemViewTagBase: Int = 250
     
     fileprivate let lrMargin: CGFloat = 12
     fileprivate let sliderViewW: CGFloat = 30
     fileprivate let sliderViewH: CGFloat = 3
-    fileprivate let itemMinW: CGFloat = 30
+    fileprivate let itemViewMinWidth: CGFloat = 30
     fileprivate let itemHorMinMargin: CGFloat = 20
 
-    fileprivate var selectedBtn: UIButton? = nil
+    fileprivate var selectedItemView: UIButton? = nil
 
     // MARK: - Initialize Function
     init() {
@@ -84,10 +88,11 @@ extension HorScroll6TitleView {
         return Bundle.main.loadNibNamed("HorScroll6TitleView", owner: nil, options: nil)?.first as? HorScroll6TitleView
     }
     
-    /// 索引选中时
-    func setupSelectedIndex(_ selectedIndex: Int, animation: Bool) -> Void {
-        self.didSetupSelectedIndex(selectedIndex, animation: animation)
-    }
+    //// 外界动态更新索引 - 待优化解决selectedIndex的设置问题
+    //func setupSelectedIndex(_ selectedIndex: Int, animation: Bool) -> Void {
+    //    self.didSetupSelectedIndex(selectedIndex, animation: animation)
+    //    //self.selectedIndex = selectedIndex
+    //}
 
     
 }
@@ -99,6 +104,7 @@ extension HorScroll6TitleView {
         self.initialInAwakeNib()
     }
     
+    /// 布局子控件
     override func layoutSubviews() {
         super.layoutSubviews()
         // 默认选中
@@ -144,10 +150,10 @@ extension HorScroll6TitleView {
             button.set(title: type.title, titleColor: UIColor(hex: 0x525C6E), for: .normal)
             button.set(title: type.title, titleColor: AppColor.theme, for: .selected)
             button.set(font: UIFont.pingFangSCFont(size: 14))
-            button.tag = self.titleBtnTagBase + index
+            button.tag = self.itemViewTagBase + index
             button.addTarget(self, action: #selector(titleBtnClick(_:)), for: .touchUpInside)
             var itemW: CGFloat = type.title.size(maxSize: CGSize.max, font: UIFont.pingFangSCFont(size: 14, weight: .medium)).width + 2
-            itemW = max(itemW, self.itemMinW)
+            itemW = max(itemW, self.itemViewMinWidth)
             button.bounds = CGRect.init(x: 0, y: 0, width: itemW, height: HorScroll6TitleView.viewHeight)
             button.snp.makeConstraints { (make) in
                 make.top.bottom.height.equalToSuperview()
@@ -174,10 +180,10 @@ extension HorScroll6TitleView {
             make.leading.equalToSuperview().offset(lrMargin)    // 初始位置
         }
         // 默认选中
-        if let button = self.mainView.viewWithTag(self.titleBtnTagBase + self.defaultSelectedIndex) as? UIButton {
+        if let button = self.mainView.viewWithTag(self.itemViewTagBase + self.defaultSelectedIndex) as? UIButton {
             button.isSelected = true
             button.titleLabel?.font = UIFont.pingFangSCFont(size: 14, weight: .medium)
-            self.selectedBtn = button
+            self.selectedItemView = button
             self.slider.snp.remakeConstraints { (make) in
                 make.bottom.equalToSuperview()
                 make.height.equalTo(self.sliderViewH)
@@ -191,7 +197,7 @@ extension HorScroll6TitleView {
         var fixedWidth: CGFloat = self.lrMargin * 2.0
         for (_, type) in self.types.enumerated() {
             var itemW: CGFloat = type.title.size(maxSize: CGSize.max, font: UIFont.pingFangSCFont(size: 14, weight: .medium)).width + 2
-            itemW = max(itemW, self.itemMinW)
+            itemW = max(itemW, self.itemViewMinWidth)
             fixedWidth += itemW
         }
         var horMargin: CGFloat = self.itemHorMinMargin
@@ -221,15 +227,15 @@ extension HorScroll6TitleView {
     
     /// 索引选中时
     fileprivate func didSetupSelectedIndex(_ selectedIndex: Int, animation: Bool = false) -> Void {
-        // selectedBtn
-        self.selectedBtn?.isSelected = false
-        self.selectedBtn?.titleLabel?.font = UIFont.pingFangSCFont(size: 14)
-        guard let button = self.mainView.viewWithTag(self.titleBtnTagBase + selectedIndex) as? UIButton else {
+        // selectedItemView
+        self.selectedItemView?.isSelected = false
+        self.selectedItemView?.titleLabel?.font = UIFont.pingFangSCFont(size: 14)
+        guard let button = self.mainView.viewWithTag(self.itemViewTagBase + selectedIndex) as? UIButton else {
             return
         }
         button.isSelected = true
         button.titleLabel?.font = UIFont.pingFangSCFont(size: 14, weight: .medium)
-        self.selectedBtn = button
+        self.selectedItemView = button
         self.processScrollView(button)
         // slider
         self.slider.snp.remakeConstraints { (make) in
@@ -272,7 +278,7 @@ extension HorScroll6TitleView {
 // MARK: - Event Function
 extension HorScroll6TitleView {
     @objc fileprivate func titleBtnClick(_ button: UIButton) -> Void {
-        let index = button.tag - self.titleBtnTagBase
+        let index = button.tag - self.itemViewTagBase
         let type = self.types[index]
         self.delegate?.titleView(self, didClickedAt: index, with: type)
         self.titleClickAction?(self, index, type)

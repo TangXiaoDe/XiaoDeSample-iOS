@@ -1,20 +1,20 @@
 //
-//  HorScroll5NavTitleView.swift
+//  HorScroll2NavTitleView.swift
 //  XiaoDeSample
 //
-//  Created by 小唐 on 2020/7/9.
+//  Created by 小唐 on 2020/7/10.
 //  Copyright © 2020 XiaoDeStudio. All rights reserved.
 //
-//  HorScroll5的导航标题视图：我的任务、我的订单
+//  HorScroll2的导航栏标标题
 
 import UIKit
 
-protocol HorScroll5NavTitleViewProtocol: class {
-    func titleView(_ titleView: HorScroll5NavTitleView, didClicked title: String, at index: Int) -> Void
+protocol HorScroll2NavTitleViewProtocol: class {
+    func titleView(_ titleView: HorScroll2NavTitleView, didClicked title: String, at index: Int) -> Void
 }
 
-/// HorScroll5的导航标题视图
-class HorScroll5NavTitleView: UIView
+/// HorScroll2的导航标题视图
+class HorScroll2NavTitleView: UIView
 {
 
     // MARK: - Internal Property
@@ -51,8 +51,8 @@ class HorScroll5NavTitleView: UIView
     }
     
     /// 回调
-    weak var delegate: HorScroll5NavTitleViewProtocol?
-    var titleClickAction: ((_ titleView: HorScroll5NavTitleView, _ title: String, _ index: Int) -> Void)?
+    weak var delegate: HorScroll2NavTitleViewProtocol?
+    var titleClickAction: ((_ titleView: HorScroll2NavTitleView, _ title: String, _ index: Int) -> Void)?
 
     // MARK: - Private Property
 
@@ -63,7 +63,7 @@ class HorScroll5NavTitleView: UIView
 
     fileprivate let sliderViewH: CGFloat = 3
     fileprivate let sliderViewW: CGFloat = 24
-    fileprivate var itemViewWidth: CGFloat = 100
+    fileprivate var itemViewWidth: CGFloat = 64
 
     fileprivate let itemViewTagBase: Int = 250
     fileprivate var itemViewList: [UIButton] = []
@@ -72,7 +72,7 @@ class HorScroll5NavTitleView: UIView
     fileprivate var selectedItemView: UIButton?
 
     override var intrinsicContentSize: CGSize {
-        return CGSize.init(width: CGFloat(self.models.count) * itemViewWidth, height: HorScroll5NavTitleView.viewHeight)
+        return CGSize.init(width: CGFloat(self.models.count) * itemViewWidth, height: HorScroll2NavTitleView.viewHeight)
     }
 
     // MARK: - Initialize Function
@@ -105,9 +105,9 @@ class HorScroll5NavTitleView: UIView
 }
 
 // MARK: - Internal Function
-extension HorScroll5NavTitleView {
-    class func loadXib() -> HorScroll5NavTitleView? {
-        return Bundle.main.loadNibNamed("HorScroll5NavTitleView", owner: nil, options: nil)?.first as? HorScroll5NavTitleView
+extension HorScroll2NavTitleView {
+    class func loadXib() -> HorScroll2NavTitleView? {
+        return Bundle.main.loadNibNamed("HorScroll2NavTitleView", owner: nil, options: nil)?.first as? HorScroll2NavTitleView
     }
 
     //// 外界动态更新索引 - 待优化解决selectedIndex的设置问题
@@ -119,7 +119,7 @@ extension HorScroll5NavTitleView {
 }
 
 // MARK: - LifeCircle Function
-extension HorScroll5NavTitleView {
+extension HorScroll2NavTitleView {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.initialInAwakeNib()
@@ -134,7 +134,7 @@ extension HorScroll5NavTitleView {
 
 }
 // MARK: - Private UI 手动布局
-extension HorScroll5NavTitleView {
+extension HorScroll2NavTitleView {
 
     /// 界面布局
     fileprivate func initialUI() -> Void {
@@ -192,7 +192,7 @@ extension HorScroll5NavTitleView {
 
 }
 // MARK: - Private UI Xib加载后处理
-extension HorScroll5NavTitleView {
+extension HorScroll2NavTitleView {
     /// awakeNib时的处理
     fileprivate func initialInAwakeNib() -> Void {
 
@@ -200,7 +200,7 @@ extension HorScroll5NavTitleView {
 }
 
 // MARK: - Data Function
-extension HorScroll5NavTitleView {
+extension HorScroll2NavTitleView {
     /// 数据加载
     fileprivate func setupWithModels(_ models: [String]) -> Void {
         self.setupMainView(with: models)
@@ -232,7 +232,7 @@ extension HorScroll5NavTitleView {
 }
 
 // MARK: - Event Function
-extension HorScroll5NavTitleView {
+extension HorScroll2NavTitleView {
     /// 按钮点击
     @objc fileprivate func itemViewClick(_ button: UIButton) -> Void {
         if button.isSelected {
@@ -248,13 +248,13 @@ extension HorScroll5NavTitleView {
 }
 
 // MARK: - Extension Function
-extension HorScroll5NavTitleView {
+extension HorScroll2NavTitleView {
 
 }
 
 // MARK: - Delegate Function
 
 // MARK: - <XXXDelegate>
-extension HorScroll5NavTitleView {
+extension HorScroll2NavTitleView {
 
 }

@@ -1,29 +1,29 @@
 //
-//  HorScroll4TitleView.swift
+//  HorScroll3TitleView.swift
 //  XiaoDeSample
 //
-//  Created by 小唐 on 2020/7/9.
+//  Created by 小唐 on 2020/7/10.
 //  Copyright © 2020 XiaoDeStudio. All rights reserved.
 //
-//  HorScroll4中使用的标题选择控件，
-//  类型由外界传入，标题栏长度不定可能需滑动的方式
+//  HorScroll3中使用的标题选择控件，
+//  类型由外界传入，但不应过多；重点等分处理，且不考虑滑动问题；
 
 import UIKit
 
-protocol HorScroll4TitleViewProtocol: class {
-    func titleView(_ titleView: HorScroll4TitleView, didClickedAt index: Int, with type: HorScrollListType) -> Void
+protocol HorScroll3TitleViewProtocol: class {
+    func titleView(_ titleView: HorScroll3TitleView, didClickedAt index: Int, with type: HorScrollListType) -> Void
 }
 
-typealias HorScroll4TitleSectionView = HorScroll4TitleView
-class HorScroll4TitleView: UIView
+typealias HorScroll3TitleSectionView = HorScroll3TitleView
+class HorScroll3TitleView: UIView
 {
 
     // MARK: - Internal Property
 
     static let viewHeight: CGFloat = 44
 
-    weak var delegate: HorScroll4TitleViewProtocol?
-    var titleClickAction:((_ titleView: HorScroll4TitleView, _ index: Int, _ type: HorScrollListType) -> Void)?
+    weak var delegate: HorScroll3TitleViewProtocol?
+    var titleClickAction:((_ titleView: HorScroll3TitleView, _ index: Int, _ type: HorScrollListType) -> Void)?
 
     var types: [HorScrollListType] = [] {
         didSet {
@@ -47,24 +47,22 @@ class HorScroll4TitleView: UIView
         }
     }
     fileprivate var isFirstSetSelectedIndex: Bool = true
-    
+
     var showSlider: Bool = true {
         didSet {
             self.slider.isHidden = !showSlider
         }
     }
-
+    
     // MARK: - Private Property
     fileprivate let mainView: UIView = UIView()
-    fileprivate let scrollView: UIScrollView = UIScrollView.init()
     fileprivate let slider: UIView = UIView()
     fileprivate let itemViewTagBase: Int = 250
     
     fileprivate let lrMargin: CGFloat = 12
+    fileprivate let itemHorMargin: CGFloat = 20
     fileprivate let sliderViewW: CGFloat = 30
     fileprivate let sliderViewH: CGFloat = 3
-    fileprivate let itemViewMinWidth: CGFloat = 30
-    fileprivate let itemHorMinMargin: CGFloat = 20
 
     fileprivate var selectedItemView: UIButton? = nil
 
@@ -85,9 +83,9 @@ class HorScroll4TitleView: UIView
 }
 
 // MARK: - Internal Function
-extension HorScroll4TitleView {
-    class func loadXib() -> HorScroll4TitleView? {
-        return Bundle.main.loadNibNamed("HorScroll4TitleView", owner: nil, options: nil)?.first as? HorScroll4TitleView
+extension HorScroll3TitleView {
+    class func loadXib() -> HorScroll3TitleView? {
+        return Bundle.main.loadNibNamed("HorScroll3TitleView", owner: nil, options: nil)?.first as? HorScroll3TitleView
     }
     
     //// 外界动态更新索引 - 待优化解决selectedIndex的设置问题
@@ -95,12 +93,11 @@ extension HorScroll4TitleView {
     //    self.didSetupSelectedIndex(selectedIndex, animation: animation)
     //    //self.selectedIndex = selectedIndex
     //}
-
     
 }
 
 // MARK: - LifeCircle Function
-extension HorScroll4TitleView {
+extension HorScroll3TitleView {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.initialInAwakeNib()
@@ -115,55 +112,47 @@ extension HorScroll4TitleView {
     
 }
 // MARK: - Private UI 手动布局
-extension HorScroll4TitleView {
+extension HorScroll3TitleView {
 
     /// 界面布局
     fileprivate func initialUI() -> Void {
         // mainView
         self.addSubview(self.mainView)
-        self.initialMainView(self.mainView)
         self.backgroundColor = UIColor.white
         self.mainView.snp.makeConstraints { (make) in
             make.edges.equalToSuperview()
         }
-    }
-    fileprivate func initialMainView(_ mainView: UIView) -> Void {
-        // 1. scrollView
-        mainView.addSubview(self.scrollView)
-        self.scrollView.snp.makeConstraints { (make) in
-            make.edges.equalToSuperview()
-        }
-        // 2. bottomLine
-        mainView.addLineWithSide(.inBottom, color: UIColor.init(hex: 0xe2e2e2), thickness: 0.5, margin1: 0, margin2: 0)
+        // bottomLine
+        self.addLineWithSide(.inBottom, color: UIColor.init(hex: 0xe2e2e2), thickness: 0.5, margin1: 0, margin2: 0)
     }
     
-    /// 根据types来设置scrollView
-    fileprivate func setupScrollView(with types: [HorScrollListType]) -> Void {
-        self.scrollView.removeAllSubView()
-        let horMargin: CGFloat = self.calcHorMargin()
-        // 0. scrollView
-        self.scrollView.showsHorizontalScrollIndicator = false
-        self.scrollView.bounces = false
+    /// 根据types来设置mainView
+    fileprivate func setupMainView(with types: [HorScrollListType]) -> Void {
+        self.mainView.removeAllSubView()
+        if types.isEmpty {
+            return
+        }
+        let itemWidth: CGFloat = (kScreenWidth - self.lrMargin * 2.0 - self.itemHorMargin * CGFloat(types.count - 1)) / CGFloat(types.count)
         // 1. titleBtn
-        var leftView: UIView = self.scrollView
+        var leftView: UIView = self.mainView
         for (index, type) in self.types.enumerated() {
             let button = UIButton.init(type: .custom)
-            self.scrollView.addSubview(button)
+            self.mainView.addSubview(button)
             button.set(title: type.title, titleColor: UIColor(hex: 0x525C6E), for: .normal)
             button.set(title: type.title, titleColor: AppColor.theme, for: .selected)
             button.set(font: UIFont.pingFangSCFont(size: 14))
             button.tag = self.itemViewTagBase + index
             button.addTarget(self, action: #selector(titleBtnClick(_:)), for: .touchUpInside)
-            var itemW: CGFloat = type.title.size(maxSize: CGSize.max, font: UIFont.pingFangSCFont(size: 14, weight: .medium)).width + 2
-            itemW = max(itemW, self.itemViewMinWidth)
-            button.bounds = CGRect.init(x: 0, y: 0, width: itemW, height: HorScroll4TitleView.viewHeight)
+//            var itemW: CGFloat = type.title.size(maxSize: CGSize.max, font: UIFont.pingFangSCFont(size: 14, weight: .medium)).width + 2
+//            itemW = max(itemW, self.itemMinW)
+            button.bounds = CGRect.init(x: 0, y: 0, width: itemWidth, height: HorScroll3TitleView.viewHeight)
             button.snp.makeConstraints { (make) in
                 make.top.bottom.height.equalToSuperview()
-                make.width.equalTo(itemW)
+                make.width.equalTo(itemWidth)
                 if 0 == index {
                     make.leading.equalToSuperview().offset(self.lrMargin)
                 } else {
-                    make.leading.equalTo(leftView.snp.trailing).offset(horMargin)
+                    make.leading.equalTo(leftView.snp.trailing).offset(self.itemHorMargin)
                 }
                 if self.types.count - 1 == index {
                     make.trailing.equalToSuperview().offset(-self.lrMargin)
@@ -172,7 +161,7 @@ extension HorScroll4TitleView {
             leftView = button
         }
         // 2. slider
-        self.scrollView.addSubview(self.slider)
+        self.mainView.addSubview(self.slider)
         self.slider.backgroundColor = AppColor.theme
         self.slider.set(cornerRadius: self.sliderViewH * 0.5)
         self.slider.snp.makeConstraints { (make) in
@@ -190,29 +179,14 @@ extension HorScroll4TitleView {
                 make.bottom.equalToSuperview()
                 make.height.equalTo(self.sliderViewH)
                 make.centerX.equalTo(button)
-                make.width.equalTo(button.bounds.size.width - 4)
+                make.width.equalTo(self.sliderViewW)
             }
         }
-    }
-    
-    fileprivate func calcHorMargin() -> CGFloat {
-        var fixedWidth: CGFloat = self.lrMargin * 2.0
-        for (_, type) in self.types.enumerated() {
-            var itemW: CGFloat = type.title.size(maxSize: CGSize.max, font: UIFont.pingFangSCFont(size: 14, weight: .medium)).width + 2
-            itemW = max(itemW, self.itemViewMinWidth)
-            fixedWidth += itemW
-        }
-        var horMargin: CGFloat = self.itemHorMinMargin
-        let calcHorMargin: CGFloat = abs(kScreenWidth - fixedWidth) / CGFloat(self.types.count - 1)
-        if kScreenWidth > fixedWidth && calcHorMargin > horMargin {
-            horMargin = calcHorMargin
-        }
-        return horMargin
     }
 
 }
 // MARK: - Private UI Xib加载后处理
-extension HorScroll4TitleView {
+extension HorScroll3TitleView {
     /// awakeNib时的处理
     fileprivate func initialInAwakeNib() -> Void {
 
@@ -220,10 +194,10 @@ extension HorScroll4TitleView {
 }
 
 // MARK: - Data Function
-extension HorScroll4TitleView {
+extension HorScroll3TitleView {
 
     fileprivate func setupTypes(_ types: [HorScrollListType]) -> Void {
-        self.setupScrollView(with: types)
+        self.setupMainView(with: types)
     }
     
     /// 索引选中时
@@ -237,13 +211,12 @@ extension HorScroll4TitleView {
         button.isSelected = true
         button.titleLabel?.font = UIFont.pingFangSCFont(size: 14, weight: .medium)
         self.selectedItemView = button
-        self.processScrollView(button)
         // slider
         self.slider.snp.remakeConstraints { (make) in
             make.bottom.equalToSuperview()
             make.height.equalTo(self.sliderViewH)
             make.centerX.equalTo(button)
-            make.width.equalTo(button.bounds.size.width - 4)
+            make.width.equalTo(self.sliderViewW)
         }
         // 注：动画会产生缓存，导致最开始加载时异常
         if animation {
@@ -252,32 +225,11 @@ extension HorScroll4TitleView {
             }
         }
     }
-    
-    /// 处理scroll跟着滚动
-    fileprivate func processScrollView(_ button: UIButton) {
-        if self.scrollView.contentSize.width <= kScreenWidth {
-            return
-        }
-        // 初始默认设置时，视图布局并未完成，此时设置显示效果的问题
-        ////方案1：index方案，限制了按钮宽度必须一致；
-        //let btnCenteX: CGFloat = self.btnMaxW * (CGFloat(button.tag - self.itemTagBase) + 0.5)
-        ////方案2：frame方案，限制了必须添加frame
-        //let btnCenteX: CGFloat = button.frame.origin.x + button.frame.size.width * 0.5
-
-        // 默认居中，左侧不足则靠左，右侧不足则靠右；优先考虑靠左和靠右的特殊情况
-        if button.frame.origin.x + button.frame.size.width * 0.5 < kScreenWidth * 0.5 {
-            self.scrollView.setContentOffset(CGPoint.zero, animated: true)
-        } else if self.scrollView.contentSize.width - button.frame.origin.x - button.frame.size.width * 0.5 < kScreenWidth * 0.5 {
-            self.scrollView.setContentOffset(CGPoint.init(x: self.scrollView.contentSize.width - kScreenWidth, y: 0), animated: true)
-        } else {
-            self.scrollView.setContentOffset(CGPoint.init(x: button.frame.origin.x + button.frame.size.width * 0.5 - kScreenWidth * 0.5, y: 0), animated: true)
-        }
-    }
 
 }
 
 // MARK: - Event Function
-extension HorScroll4TitleView {
+extension HorScroll3TitleView {
     @objc fileprivate func titleBtnClick(_ button: UIButton) -> Void {
         let index = button.tag - self.itemViewTagBase
         let type = self.types[index]

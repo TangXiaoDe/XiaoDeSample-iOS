@@ -21,7 +21,7 @@ class HorScroll6Controller: BaseViewController
     fileprivate let scrollView: UIScrollView = UIScrollView.init()
     
     fileprivate var childVCList: [HorScrollListController] = []
-    fileprivate var selectedIndex: Int = 0 {
+    fileprivate(set) var selectedIndex: Int = 0 {
         didSet {
             if self.isFirstSetSelectedIndex {
                 self.isFirstSetSelectedIndex = false
@@ -102,12 +102,12 @@ extension HorScroll6Controller {
     
     /// scrollView 布局
     fileprivate func setupScrollView(types: [HorScrollListType]) -> Void {
-        scrollView.isPagingEnabled = true
-        scrollView.showsHorizontalScrollIndicator = false
-        scrollView.delegate = self
-        // childs
-        scrollView.removeAllSubView()
+        self.scrollView.isPagingEnabled = true
+        self.scrollView.showsHorizontalScrollIndicator = false
+        self.scrollView.delegate = self
+        self.scrollView.removeAllSubView()
         self.childVCList.removeAll()
+        // childs
         let scrollViewH: CGFloat = kScreenHeight - kNavigationStatusBarHeight - self.sectionHeight   // - kTabBarHeight
         var leftView: UIView = self.scrollView
         for (index, type) in types.enumerated() {
@@ -152,7 +152,9 @@ extension HorScroll6Controller {
             self.defaultSelectedIndex = 1
             self.sectionView.defaultSelectedIndex = self.defaultSelectedIndex
             self.scrollView.setContentOffset(CGPoint.init(x: kScreenWidth * CGFloat(self.defaultSelectedIndex), y: 0), animated: false)
-            self.childVCList[self.defaultSelectedIndex].isSelected = true
+            for (index, childVC) in self.childVCList.enumerated() {
+                childVC.isSelected = index == self.defaultSelectedIndex
+            }
             self.selectedIndex = self.defaultSelectedIndex
         }
     }

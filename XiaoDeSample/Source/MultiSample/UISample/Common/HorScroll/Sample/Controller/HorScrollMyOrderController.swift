@@ -9,4 +9,4 @@
 
 import UIKit
 
-typealias HorScrollMyOrderController = HorScroll51Controller
+typealias HorScrollMyOrderController = HorScroll52Controller

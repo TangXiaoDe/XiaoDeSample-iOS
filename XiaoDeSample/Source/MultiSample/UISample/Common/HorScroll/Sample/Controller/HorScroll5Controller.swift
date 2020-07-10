@@ -24,7 +24,7 @@ class HorScroll5Controller: BaseViewController
     fileprivate let titles: [String] = ["我的任务", "我的订单"]
     fileprivate let titleView: HorScroll5NavTitleView = HorScroll5NavTitleView.init()
     
-    fileprivate var selectedIndex: Int = 0 {
+    fileprivate(set) var selectedIndex: Int = 0 {
         didSet {
             if self.isFirstSelectedIndex {
                 self.isFirstSelectedIndex = false
@@ -137,7 +137,9 @@ extension HorScroll5Controller {
         self.defaultSelectedIndex = 1
         self.titleView.defaultSelectedIndex = self.defaultSelectedIndex
         self.scrollView.setContentOffset(CGPoint.init(x: kScreenWidth * CGFloat(self.defaultSelectedIndex), y: 0), animated: false)
-        self.childVCList[self.defaultSelectedIndex].isSelected = true
+        for (index, childVC) in self.childVCList.enumerated() {
+            childVC.isSelected = index == self.defaultSelectedIndex
+        }
         self.selectedIndex = self.defaultSelectedIndex
     }
 

@@ -15,6 +15,12 @@ class HorScroll52Controller: BaseViewController
     
     var defaultSelectedIndex: Int = 0
     
+    override var isSelected: Bool {
+        didSet {
+            self.childVCList[selectedIndex].isSelected = isSelected
+        }
+    }
+    
     // MARK: - Private Property
     
     fileprivate let sectionView: HorScroll52TitleView = HorScroll52TitleView.init()
@@ -144,7 +150,10 @@ extension HorScroll52Controller {
         self.defaultSelectedIndex = 1
         self.sectionView.defaultSelectedIndex = self.defaultSelectedIndex
         self.scrollView.setContentOffset(CGPoint.init(x: kScreenWidth * CGFloat(self.defaultSelectedIndex), y: 0), animated: false)
-        self.childVCList[self.defaultSelectedIndex].isSelected = true
+        // 注，该界面属于HorScroll5的子界面，其数据加载需等主界面选中处理
+        //for (index, childVC) in self.childVCList.enumerated() {
+        //    childVC.isSelected = index == self.defaultSelectedIndex
+        //}
         self.selectedIndex = self.defaultSelectedIndex
     }
 

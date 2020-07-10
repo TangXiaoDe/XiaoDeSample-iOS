@@ -18,7 +18,7 @@ class HorScroll1Controller: BaseViewController
     // MARK: - Private Property
     fileprivate let scrollView: UIScrollView = UIScrollView.init()
     // 实际上可能每个列表是不同类型的控制器，需要提取基类或协议；
-    fileprivate var childVCList: [HorScrollListController] = []
+    fileprivate var childVCList: [BaseViewController] = []
     fileprivate let followListVC = HorScrollListController.init(type: .follow)
     fileprivate let recommentListVC = HorScrollListController.init(type: .recommend)
     fileprivate let aroundListVC = HorScrollListController.init(type: .nearby)
@@ -142,7 +142,9 @@ extension HorScroll1Controller {
         self.defaultSelectedIndex = 1
         self.titleSegment.selectedSegmentIndex = self.defaultSelectedIndex
         self.scrollView.setContentOffset(CGPoint.init(x: kScreenWidth * CGFloat(self.defaultSelectedIndex), y: 0), animated: false)
-        self.childVCList[self.defaultSelectedIndex].isSelected = true
+        for (index, childVC) in self.childVCList.enumerated() {
+            childVC.isSelected = index == self.defaultSelectedIndex
+        }
         self.selectedIndex = self.defaultSelectedIndex
     }
 }

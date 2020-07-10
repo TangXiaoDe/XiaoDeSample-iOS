@@ -69,7 +69,7 @@ extension HorScrollHomeController {
 extension HorScrollHomeController {
     // MARK: - Private  数据处理与加载
     fileprivate func initialDataSource() -> Void {
-        self.sourceList = ["HorScroll1", "HorScroll2", "HorScroll3", "HorScroll4", "HorScroll5", "HorScroll6", "HorScroll7"]
+        self.sourceList = ["HorScroll1", "HorScroll2", "HorScroll3", "HorScroll4", "HorScroll5", "HorScroll6", "MyTask", "MyOrder"]
         self.tableView.reloadData()
     }
 
@@ -97,6 +97,12 @@ extension HorScrollHomeController {
             self.enterPageVC(nextVC)
         case "HorScroll6":
             let nextVC = HorScroll6Controller.init()
+            self.enterPageVC(nextVC)
+        case "MyTask":
+            let nextVC = HorScrollMyTaskController.init()
+            self.enterPageVC(nextVC)
+        case "MyOrder":
+            let nextVC = HorScrollMyOrderController.init()
             self.enterPageVC(nextVC)
         default:
             break

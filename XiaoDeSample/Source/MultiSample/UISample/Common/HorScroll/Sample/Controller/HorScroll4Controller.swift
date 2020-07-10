@@ -82,6 +82,7 @@ extension HorScroll4Controller {
         // titleSecton
         self.view.addSubview(self.sectionView)
         self.sectionView.delegate = self
+        self.sectionView.types = self.types
         self.sectionView.snp.makeConstraints { (make) in
             make.leading.trailing.top.equalToSuperview()
             make.height.equalTo(self.sectionHeight)
@@ -143,7 +144,9 @@ extension HorScroll4Controller {
         self.defaultSelectedIndex = 1
         self.sectionView.defaultSelectedIndex = self.defaultSelectedIndex
         self.scrollView.setContentOffset(CGPoint.init(x: kScreenWidth * CGFloat(self.defaultSelectedIndex), y: 0), animated: false)
-        self.childVCList[self.defaultSelectedIndex].isSelected = true
+        for (index, childVC) in self.childVCList.enumerated() {
+            childVC.isSelected = index == self.defaultSelectedIndex
+        }
         self.selectedIndex = self.defaultSelectedIndex
     }
 }

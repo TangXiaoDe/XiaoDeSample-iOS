@@ -21,6 +21,8 @@
 		53A384B824B814FB00442C4E /* HorScrollMyTaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A384B724B814FB00442C4E /* HorScrollMyTaskController.swift */; };
 		53A384BA24B815DE00442C4E /* HorScrollMyOrderTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A384B924B815DE00442C4E /* HorScrollMyOrderTitleView.swift */; };
 		53A384BC24B815EE00442C4E /* HorScrollMyTaskTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A384BB24B815EE00442C4E /* HorScrollMyTaskTitleView.swift */; };
+		53A384BE24B821F400442C4E /* HorScroll2NavTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A384BD24B821F400442C4E /* HorScroll2NavTitleView.swift */; };
+		53A384C024B83F0A00442C4E /* HorScroll3TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A384BF24B83F0A00442C4E /* HorScroll3TitleView.swift */; };
 		53B2DD922488969200F10263 /* XDPTodoHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DD912488969200F10263 /* XDPTodoHomeController.swift */; };
 		53B2DD94248896A400F10263 /* XDPTodoPlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DD93248896A400F10263 /* XDPTodoPlaceModel.swift */; };
 		53B2DD96248896CF00F10263 /* XDPTodoPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2DD95248896CF00F10263 /* XDPTodoPlaceView.swift */; };
@@ -264,6 +266,8 @@
 		53A384B724B814FB00442C4E /* HorScrollMyTaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorScrollMyTaskController.swift; sourceTree = "<group>"; };
 		53A384B924B815DE00442C4E /* HorScrollMyOrderTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorScrollMyOrderTitleView.swift; sourceTree = "<group>"; };
 		53A384BB24B815EE00442C4E /* HorScrollMyTaskTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorScrollMyTaskTitleView.swift; sourceTree = "<group>"; };
+		53A384BD24B821F400442C4E /* HorScroll2NavTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorScroll2NavTitleView.swift; sourceTree = "<group>"; };
+		53A384BF24B83F0A00442C4E /* HorScroll3TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorScroll3TitleView.swift; sourceTree = "<group>"; };
 		53B2DD8A2488964300F10263 /* ProjectManageReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ProjectManageReadMe.md; sourceTree = "<group>"; };
 		53B2DD912488969200F10263 /* XDPTodoHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDPTodoHomeController.swift; sourceTree = "<group>"; };
 		53B2DD93248896A400F10263 /* XDPTodoPlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDPTodoPlaceModel.swift; sourceTree = "<group>"; };
@@ -1013,9 +1017,11 @@
 		53D9265524B5BA9900971F97 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				53A384BD24B821F400442C4E /* HorScroll2NavTitleView.swift */,
+				53A384BF24B83F0A00442C4E /* HorScroll3TitleView.swift */,
 				53A1E22024B708EC00674B00 /* HorScroll4TitleView.swift */,
-				53A1E22424B7178500674B00 /* HorScroll6TitleView.swift */,
 				53A1E22624B727B200674B00 /* HorScroll5NavTitleView.swift */,
+				53A1E22424B7178500674B00 /* HorScroll6TitleView.swift */,
 				53A1E22824B727D700674B00 /* HorScroll51TitleView.swift */,
 				53A1E22A24B727E300674B00 /* HorScroll52TitleView.swift */,
 				53A384B924B815DE00442C4E /* HorScrollMyOrderTitleView.swift */,
@@ -2449,6 +2455,7 @@
 				53F746C024879B22007B6A0F /* LocationManager.swift in Sources */,
 				53F7471624879CB3007B6A0F /* LoginPlaceModel.swift in Sources */,
 				53D9267B24B5C4B600971F97 /* HorScroll5Controller.swift in Sources */,
+				53A384BE24B821F400442C4E /* HorScroll2NavTitleView.swift in Sources */,
 				53F7473724879D2C007B6A0F /* TestHomeController.swift in Sources */,
 				53F7462724879957007B6A0F /* ThirdChildConfig.swift in Sources */,
 				53F7471324879CB3007B6A0F /* UserSupplement.swift in Sources */,
@@ -2504,6 +2511,7 @@
 				53B2DDDF2488C7A600F10263 /* SampleManager.swift in Sources */,
 				53B2DDB4248898F900F10263 /* XDPProjectPlaceModel.swift in Sources */,
 				53F7466F24879B19007B6A0F /* UserTagObject.swift in Sources */,
+				53A384C024B83F0A00442C4E /* HorScroll3TitleView.swift in Sources */,
 				53B2DD922488969200F10263 /* XDPTodoHomeController.swift in Sources */,
 				53A1E22724B727B200674B00 /* HorScroll5NavTitleView.swift in Sources */,
 				53F7467624879B19007B6A0F /* AccountLoginModel.swift in Sources */,
