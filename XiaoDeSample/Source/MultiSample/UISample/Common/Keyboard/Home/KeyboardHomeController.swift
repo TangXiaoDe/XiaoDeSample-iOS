@@ -1,15 +1,16 @@
 //
-//  UISCommonHomeController.swift
+//  KeyboardHomeController.swift
 //  XiaoDeSample
 //
-//  Created by 小唐 on 2020/7/3.
+//  Created by 小唐 on 2020/7/15.
 //  Copyright © 2020 XiaoDeStudio. All rights reserved.
 //
+//  键盘范例主页
 
 import UIKit
 
-typealias UISampleCommonHomeController = UISCommonHomeController
-class UISCommonHomeController: BaseViewController
+typealias KeyboardSampleHomeController = KeyboardHomeController
+class KeyboardHomeController: BaseViewController
 {
     
     // MARK: - Internal Property
@@ -32,7 +33,7 @@ class UISCommonHomeController: BaseViewController
 // MARK: - Internal Function
 
 // MARK: - LifeCircle Function
-extension UISCommonHomeController {
+extension KeyboardHomeController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initialUI()
@@ -41,11 +42,11 @@ extension UISCommonHomeController {
 }
 
 // MARK: - UI
-extension UISCommonHomeController {
+extension KeyboardHomeController {
     fileprivate func initialUI() -> Void {
         self.view.backgroundColor = UIColor.white
         // 1. navigationbar
-        self.navigationItem.title = "Common"
+        self.navigationItem.title = "KeyboardSample"
         // 2. tableView
         self.view.addSubview(tableView)
         tableView.dataSource = self
@@ -65,25 +66,22 @@ extension UISCommonHomeController {
 }
 
 // MARK: - Data(数据处理与加载)
-extension UISCommonHomeController {
+extension KeyboardHomeController {
     // MARK: - Private  数据处理与加载
     fileprivate func initialDataSource() -> Void {
-        self.sourceList = ["HorScroll", "Keyboard"]
+        self.sourceList = ["BaseKeyboard"]
         self.tableView.reloadData()
     }
 
 }
 
 // MARK: - Event(事件响应)
-extension UISCommonHomeController {
+extension KeyboardHomeController {
     /// cell选中处理
     fileprivate func cellSelectedWith(model: String) -> Void {
         switch model {
-        case "HorScroll":
-            let nextVC = HorScrollHomeController.init()
-            self.enterPageVC(nextVC)
-        case "Keyboard":
-            let nextVC = KeyboardHomeController.init()
+        case "BaseKeyboard":
+            let nextVC = KeyboardBaseSampleController.init()
             self.enterPageVC(nextVC)
         default:
             break
@@ -93,29 +91,29 @@ extension UISCommonHomeController {
 }
 
 // MARK; - Request(网络请求)
-extension UISCommonHomeController {
+extension KeyboardHomeController {
     
 }
 
 // MARK: - Enter Page
-extension UISCommonHomeController {
+extension KeyboardHomeController {
     
 }
 
 // MARK: - Notification
-extension UISCommonHomeController {
+extension KeyboardHomeController {
     
 }
 
 // MARK: - Extension
-extension UISCommonHomeController {
+extension KeyboardHomeController {
     
 }
 
 // MARK: - Delegate Function
 
 // MARK: - <UITableViewDataSource>
-extension UISCommonHomeController: UITableViewDataSource {
+extension KeyboardHomeController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -145,7 +143,7 @@ extension UISCommonHomeController: UITableViewDataSource {
 }
 
 // MARK: - <UITableViewDelegate>
-extension UISCommonHomeController: UITableViewDelegate {
+extension KeyboardHomeController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         //return UITableView.automaticDimension
