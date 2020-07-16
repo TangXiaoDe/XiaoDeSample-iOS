@@ -69,7 +69,7 @@ extension KeyboardHomeController {
 extension KeyboardHomeController {
     // MARK: - Private  数据处理与加载
     fileprivate func initialDataSource() -> Void {
-        self.sourceList = ["BaseKeyboard"]
+        self.sourceList = ["BaseKeyboard", "InputAccessory"]
         self.tableView.reloadData()
     }
 
@@ -82,6 +82,9 @@ extension KeyboardHomeController {
         switch model {
         case "BaseKeyboard":
             let nextVC = KeyboardBaseSampleController.init()
+            self.enterPageVC(nextVC)
+        case "InputAccessory":
+            let nextVC = InputAccessorySampleController.init()
             self.enterPageVC(nextVC)
         default:
             break

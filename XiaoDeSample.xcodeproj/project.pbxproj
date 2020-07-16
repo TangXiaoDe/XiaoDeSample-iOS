@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		537F344424BFEC360061BC52 /* CommonInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537F344324BFEC360061BC52 /* CommonInputAccessoryView.swift */; };
+		537F344624BFF3A10061BC52 /* KeyboardSamplePlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537F344524BFF3A10061BC52 /* KeyboardSamplePlaceView.swift */; };
 		5386337124BEAECE00F7CE74 /* KeyboardHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5386337024BEAECE00F7CE74 /* KeyboardHomeController.swift */; };
 		5386337324BEAF8100F7CE74 /* KeyboardBaseSampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5386337224BEAF8100F7CE74 /* KeyboardBaseSampleController.swift */; };
 		5386337524BEAF9F00F7CE74 /* KeyboardSamplePlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5386337424BEAF9F00F7CE74 /* KeyboardSamplePlaceModel.swift */; };
-		5386337724BEAFAC00F7CE74 /* KeyboardSamplePlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5386337624BEAFAC00F7CE74 /* KeyboardSamplePlaceView.swift */; };
+		5386337924BF100800F7CE74 /* InputAccessorySampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5386337824BF100800F7CE74 /* InputAccessorySampleController.swift */; };
 		5389D85924AECF6D0017CC2A /* UISampleMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5389D85824AECF6D0017CC2A /* UISampleMainController.swift */; };
 		5389D86224AED4D00017CC2A /* UISAnimationHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5389D86124AED4D00017CC2A /* UISAnimationHomeController.swift */; };
 		5389D86424AED4DF0017CC2A /* UISCommonHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5389D86324AED4DF0017CC2A /* UISCommonHomeController.swift */; };
@@ -285,10 +287,12 @@
 		071A59AA9D8BAB373A5F415A /* Pods-XiaoDeSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XiaoDeSampleTests.release.xcconfig"; path = "Target Support Files/Pods-XiaoDeSampleTests/Pods-XiaoDeSampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		08560C9C4B8CE0AB978A6ECE /* Pods-XiaoDeSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XiaoDeSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-XiaoDeSampleTests/Pods-XiaoDeSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		49C51AA1FA2E1BC0CFF9C11A /* Pods_XiaoDeSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XiaoDeSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		537F344324BFEC360061BC52 /* CommonInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonInputAccessoryView.swift; sourceTree = "<group>"; };
+		537F344524BFF3A10061BC52 /* KeyboardSamplePlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardSamplePlaceView.swift; sourceTree = "<group>"; };
 		5386337024BEAECE00F7CE74 /* KeyboardHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHomeController.swift; sourceTree = "<group>"; };
 		5386337224BEAF8100F7CE74 /* KeyboardBaseSampleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardBaseSampleController.swift; sourceTree = "<group>"; };
 		5386337424BEAF9F00F7CE74 /* KeyboardSamplePlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardSamplePlaceModel.swift; sourceTree = "<group>"; };
-		5386337624BEAFAC00F7CE74 /* KeyboardSamplePlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardSamplePlaceView.swift; sourceTree = "<group>"; };
+		5386337824BF100800F7CE74 /* InputAccessorySampleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputAccessorySampleController.swift; sourceTree = "<group>"; };
 		5389D85824AECF6D0017CC2A /* UISampleMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISampleMainController.swift; sourceTree = "<group>"; };
 		5389D86024AED4540017CC2A /* UISampleREADME.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = UISampleREADME.md; sourceTree = "<group>"; };
 		5389D86124AED4D00017CC2A /* UISAnimationHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISAnimationHomeController.swift; sourceTree = "<group>"; };
@@ -625,6 +629,7 @@
 			isa = PBXGroup;
 			children = (
 				5386337224BEAF8100F7CE74 /* KeyboardBaseSampleController.swift */,
+				5386337824BF100800F7CE74 /* InputAccessorySampleController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -640,7 +645,7 @@
 		5386336F24BEAEA700F7CE74 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5386337624BEAFAC00F7CE74 /* KeyboardSamplePlaceView.swift */,
+				537F344524BFF3A10061BC52 /* KeyboardSamplePlaceView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1359,6 +1364,7 @@
 				53D9264124B5612800971F97 /* IconContainer.swift */,
 				53D9264324B5619600971F97 /* TitleControl.swift */,
 				53D9264524B5619E00971F97 /* IconControl.swift */,
+				537F344324BFEC360061BC52 /* CommonInputAccessoryView.swift */,
 				53D9264724B5638400971F97 /* XDDashLineView.swift */,
 			);
 			path = View;
@@ -2893,6 +2899,7 @@
 				53A384DE24B8517900442C4E /* PayAnimationController.swift in Sources */,
 				53F7468624879B19007B6A0F /* DateFormatterManager.swift in Sources */,
 				53F746D824879B22007B6A0F /* XDGIFImage.swift in Sources */,
+				5386337924BF100800F7CE74 /* InputAccessorySampleController.swift in Sources */,
 				53F7467D24879B19007B6A0F /* UIImage+QRCode.swift in Sources */,
 				53F7467A24879B19007B6A0F /* UIView+SnapKit+Extension.swift in Sources */,
 				53F7473824879D2C007B6A0F /* TestPlaceModel.swift in Sources */,
@@ -2930,6 +2937,7 @@
 				53F7468124879B19007B6A0F /* UITextField+LocalExtension.swift in Sources */,
 				53F7467F24879B19007B6A0F /* String+URL.swift in Sources */,
 				53A3852024B86D6F00442C4E /* SChainMiningPlaceView.swift in Sources */,
+				537F344424BFEC360061BC52 /* CommonInputAccessoryView.swift in Sources */,
 				5389D86424AED4DF0017CC2A /* UISCommonHomeController.swift in Sources */,
 				53A3851024B86C6E00442C4E /* IMeetMiningHomeController.swift in Sources */,
 				53EEAF6024B412C800D8A8FE /* BaseTabBar.swift in Sources */,
@@ -2972,7 +2980,6 @@
 				53D9263A24B55DA200971F97 /* CommonSwitchView.swift in Sources */,
 				53B2DDC62488992500F10263 /* XDPProgressPlaceView.swift in Sources */,
 				53D9266124B5BAC700971F97 /* HorScrollHomePlaceModel.swift in Sources */,
-				5386337724BEAFAC00F7CE74 /* KeyboardSamplePlaceView.swift in Sources */,
 				53A3851424B86C8B00442C4E /* IMeetMiningPlaceView.swift in Sources */,
 				53F7461E24879957007B6A0F /* AppThemeConfig.swift in Sources */,
 				53F745E824877411007B6A0F /* AppDelegate.swift in Sources */,
@@ -3061,6 +3068,7 @@
 				5386337124BEAECE00F7CE74 /* KeyboardHomeController.swift in Sources */,
 				53F746DE24879B22007B6A0F /* RealmHelper.swift in Sources */,
 				53F746C224879B22007B6A0F /* SystemNetworkManager.swift in Sources */,
+				537F344624BFF3A10061BC52 /* KeyboardSamplePlaceView.swift in Sources */,
 				53F7471A24879CB3007B6A0F /* LeftMenuPlaceView.swift in Sources */,
 				53F747852487AEEA007B6A0F /* XDBVideoHomeController.swift in Sources */,
 				53D9265F24B5BAB300971F97 /* HorScrollHomeController.swift in Sources */,
